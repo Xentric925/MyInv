@@ -243,11 +243,23 @@
     <Compile Include="CustomMenu.Designer.cs">
       <DependentUpon>CustomMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddProduct.Designer.cs">
+      <DependentUpon>FrmAddProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCardOpened.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmCardOpened.Designer.cs">
       <DependentUpon>FrmCardOpened.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReminders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReminders.Designer.cs">
+      <DependentUpon>frmReminders.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -268,6 +280,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomMenu.resx">
       <DependentUpon>CustomMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddProduct.resx">
+      <DependentUpon>FrmAddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReminders.resx">
+      <DependentUpon>frmReminders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
