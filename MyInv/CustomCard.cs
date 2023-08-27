@@ -29,12 +29,12 @@ namespace MyInv
             {
                 if (!pressed)
                     guna2Panel1.BorderColor = Color.Beige;
-                else border.BorderColor = Color.Beige;
+                else { border.BorderColor = Color.Beige; border.BorderThickness = 1; }
                 /*this.Size = new Size(Size.Width + 4, Size.Height + 4);
                 this.Location = new Point(this.Location.X - 2, this.Location.Y - 2);*/
                 j++;
                 Task.Delay(2000).Wait();
-                if (j == 0)
+                if (j == 0&&!pressed)
                     bunifuToolTip1.Show(guna2PictureBox1, "Press for more info", "Description");
             }
         }
@@ -42,6 +42,27 @@ namespace MyInv
         {
             description = desc.Text;
             bunifuToolTip1.SetToolTip(desc, description);
+            bool childControlsOutsideBounds = false;
+
+            foreach (Control control in flowLayoutPanel1.Controls)
+            {
+                if (control.Bottom > flowLayoutPanel1.Height)
+                {
+                    childControlsOutsideBounds = true;
+                    break;
+                }
+            }
+
+            guna2VScrollBar1.Visible = childControlsOutsideBounds;
+            if (childControlsOutsideBounds)
+                guna2VScrollBar1.BindingContainer = flowLayoutPanel1;
+            else guna2VScrollBar1.BindingContainer = border;
+            foreach (BunifuTextBox txt in flowLayoutPanel1.Controls.OfType<BunifuTextBox>())
+            {
+                if (childControlsOutsideBounds)
+                    txt.Width = 108;
+                else txt.Width = 126;
+            }
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
@@ -49,6 +70,7 @@ namespace MyInv
             if (!pressed)
             {
                 pressed = true;
+                this.Width = 376;
                 BunifuAnimatorNS.BunifuTransition b = new BunifuAnimatorNS.BunifuTransition();
                 guna2Panel1.CustomizableEdges.TopRight=false;
                 guna2Panel1.CustomizableEdges.BottomRight = false;
@@ -72,6 +94,7 @@ namespace MyInv
             guna2Panel1.BorderColor = Color.Black;
             border.BorderColor = Color.Transparent;
             guna2Panel1.BorderThickness = 1;
+            this.Width = 243;
             pressed = false;
         }
 
@@ -81,10 +104,10 @@ namespace MyInv
             {
                 if (!pressed)
                     guna2Panel1.BorderColor = Color.Black;
-                else border.BorderColor = Color.Black;
-                /*this.Size = new Size(Size.Width - 4, Size.Height - 4);
-                this.Location = new Point(this.Location.X + 2, this.Location.Y + 2);*/
-                j--;
+                else { border.BorderColor = Color.Black; border.BorderThickness = 1; }
+                    /*this.Size = new Size(Size.Width - 4, Size.Height - 4);
+                    this.Location = new Point(this.Location.X + 2, this.Location.Y + 2);*/
+                    j--;
             }
         }
         private void btn_MouseLeave_1(object sender, EventArgs e)

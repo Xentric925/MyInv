@@ -425,9 +425,8 @@
             this.customCard1.ImageMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.customCard1.Location = new System.Drawing.Point(3, 3);
             this.customCard1.Name = "customCard1";
-            this.customCard1.Padding = new System.Windows.Forms.Padding(2);
             this.customCard1.ShowBorders = true;
-            this.customCard1.Size = new System.Drawing.Size(360, 346);
+            this.customCard1.Size = new System.Drawing.Size(243, 346);
             this.customCard1.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
             this.customCard1.TabIndex = 0;
             // 
