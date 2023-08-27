@@ -45,11 +45,6 @@ namespace MyInv
             frm.Show();
         }
 
-        private void customMenu1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             frmReminders frm = new frmReminders();
