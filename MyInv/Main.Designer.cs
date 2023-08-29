@@ -36,12 +36,10 @@
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.bunifuFormResizer1 = new Bunifu.UI.WinForms.BunifuFormResizer(this.components);
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.customMenu1 = new MyInv.customMenu();
             this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.Products = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.customCard1 = new MyInv.CustomCard();
             this.btnAddProduct = new Bunifu.UI.WinForms.BunifuImageButton();
             this.Receipts = new System.Windows.Forms.TabPage();
             this.Invoices = new System.Windows.Forms.TabPage();
@@ -50,6 +48,8 @@
             this.Payments = new System.Windows.Forms.TabPage();
             this.Installments = new System.Windows.Forms.TabPage();
             this.Reminders = new System.Windows.Forms.TabPage();
+            this.customMenu1 = new MyInv.customMenu();
+            this.customCard1 = new MyInv.CustomCard();
             this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuPanel1.SuspendLayout();
             this.bunifuPanel2.SuspendLayout();
@@ -232,32 +232,6 @@
             this.bunifuPanel2.Size = new System.Drawing.Size(1198, 558);
             this.bunifuPanel2.TabIndex = 2;
             // 
-            // customMenu1
-            // 
-            this.customMenu1.AllowAnimations = false;
-            this.customMenu1.AllowBorderColorChanges = false;
-            this.customMenu1.AllowMouseEffects = false;
-            this.customMenu1.AnimationSpeed = 200;
-            this.customMenu1.BackColor = System.Drawing.Color.Transparent;
-            this.customMenu1.BackgroundColor = System.Drawing.Color.Transparent;
-            this.customMenu1.BorderColor = System.Drawing.Color.Transparent;
-            this.customMenu1.BorderRadius = 5;
-            this.customMenu1.BorderStyle = Bunifu.UI.WinForms.BunifuUserControl.BorderStyles.Solid;
-            this.customMenu1.BorderThickness = 1;
-            this.customMenu1.ColorContrastOnClick = 30;
-            this.customMenu1.ColorContrastOnHover = 30;
-            this.customMenu1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.customMenu1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.customMenu1.Image = null;
-            this.customMenu1.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.customMenu1.Location = new System.Drawing.Point(0, 0);
-            this.customMenu1.Name = "customMenu1";
-            this.customMenu1.ShowBorders = true;
-            this.customMenu1.Size = new System.Drawing.Size(310, 558);
-            this.customMenu1.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
-            this.customMenu1.TabIndex = 4;
-            this.customMenu1.SelectedIndexChanged += new System.EventHandler(this.customMenu1_SelectedIndexChanged);
-            // 
             // bunifuPanel3
             // 
             this.bunifuPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -337,31 +311,7 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(873, 544);
             this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // customCard1
-            // 
-            this.customCard1.AllowAnimations = false;
-            this.customCard1.AllowBorderColorChanges = false;
-            this.customCard1.AllowMouseEffects = false;
-            this.customCard1.AnimationSpeed = 200;
-            this.customCard1.BackColor = System.Drawing.Color.Transparent;
-            this.customCard1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(140)))));
-            this.customCard1.BorderColor = System.Drawing.Color.Black;
-            this.customCard1.BorderRadius = 25;
-            this.customCard1.BorderStyle = Bunifu.UI.WinForms.BunifuUserControl.BorderStyles.Solid;
-            this.customCard1.BorderThickness = 1;
-            this.customCard1.ColorContrastOnClick = 30;
-            this.customCard1.ColorContrastOnHover = 30;
-            this.customCard1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.customCard1.Image = null;
-            this.customCard1.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.customCard1.Location = new System.Drawing.Point(3, 3);
-            this.customCard1.Name = "customCard1";
-            this.customCard1.Padding = new System.Windows.Forms.Padding(3, 8, 2, 1);
-            this.customCard1.ShowBorders = true;
-            this.customCard1.Size = new System.Drawing.Size(250, 400);
-            this.customCard1.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
-            this.customCard1.TabIndex = 0;
+            
             // 
             // btnAddProduct
             // 
@@ -402,10 +352,10 @@
             // 
             this.Receipts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.Receipts.ForeColor = System.Drawing.Color.Beige;
-            this.Receipts.Location = new System.Drawing.Point(5, 4);
+            this.Receipts.Location = new System.Drawing.Point(184, 4);
             this.Receipts.Name = "Receipts";
             this.Receipts.Padding = new System.Windows.Forms.Padding(3);
-            this.Receipts.Size = new System.Drawing.Size(879, 550);
+            this.Receipts.Size = new System.Drawing.Size(700, 550);
             this.Receipts.TabIndex = 1;
             this.Receipts.Text = "tabPage2";
             // 
@@ -413,10 +363,10 @@
             // 
             this.Invoices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.Invoices.ForeColor = System.Drawing.Color.Beige;
-            this.Invoices.Location = new System.Drawing.Point(5, 4);
+            this.Invoices.Location = new System.Drawing.Point(184, 4);
             this.Invoices.Name = "Invoices";
             this.Invoices.Padding = new System.Windows.Forms.Padding(3);
-            this.Invoices.Size = new System.Drawing.Size(879, 550);
+            this.Invoices.Size = new System.Drawing.Size(700, 550);
             this.Invoices.TabIndex = 2;
             this.Invoices.Text = "tabPage3";
             // 
@@ -424,9 +374,9 @@
             // 
             this.Suppliers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.Suppliers.ForeColor = System.Drawing.Color.Beige;
-            this.Suppliers.Location = new System.Drawing.Point(5, 4);
+            this.Suppliers.Location = new System.Drawing.Point(184, 4);
             this.Suppliers.Name = "Suppliers";
-            this.Suppliers.Size = new System.Drawing.Size(879, 550);
+            this.Suppliers.Size = new System.Drawing.Size(700, 550);
             this.Suppliers.TabIndex = 3;
             this.Suppliers.Text = "tabPage1";
             // 
@@ -434,9 +384,9 @@
             // 
             this.Sales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.Sales.ForeColor = System.Drawing.Color.Beige;
-            this.Sales.Location = new System.Drawing.Point(5, 4);
+            this.Sales.Location = new System.Drawing.Point(184, 4);
             this.Sales.Name = "Sales";
-            this.Sales.Size = new System.Drawing.Size(879, 550);
+            this.Sales.Size = new System.Drawing.Size(700, 550);
             this.Sales.TabIndex = 4;
             this.Sales.Text = "tabPage1";
             // 
@@ -444,9 +394,9 @@
             // 
             this.Payments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.Payments.ForeColor = System.Drawing.Color.Beige;
-            this.Payments.Location = new System.Drawing.Point(5, 4);
+            this.Payments.Location = new System.Drawing.Point(184, 4);
             this.Payments.Name = "Payments";
-            this.Payments.Size = new System.Drawing.Size(879, 550);
+            this.Payments.Size = new System.Drawing.Size(700, 550);
             this.Payments.TabIndex = 5;
             this.Payments.Text = "tabPage1";
             // 
@@ -454,9 +404,9 @@
             // 
             this.Installments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.Installments.ForeColor = System.Drawing.Color.Beige;
-            this.Installments.Location = new System.Drawing.Point(5, 4);
+            this.Installments.Location = new System.Drawing.Point(184, 4);
             this.Installments.Name = "Installments";
-            this.Installments.Size = new System.Drawing.Size(879, 550);
+            this.Installments.Size = new System.Drawing.Size(700, 550);
             this.Installments.TabIndex = 6;
             this.Installments.Text = "tabPage1";
             // 
@@ -465,12 +415,62 @@
             this.Reminders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.Reminders.Controls.Add(this.bunifuImageButton1);
             this.Reminders.ForeColor = System.Drawing.Color.Beige;
-            this.Reminders.Location = new System.Drawing.Point(5, 4);
+            this.Reminders.Location = new System.Drawing.Point(184, 4);
             this.Reminders.Name = "Reminders";
-            this.Reminders.Size = new System.Drawing.Size(879, 550);
+            this.Reminders.Size = new System.Drawing.Size(700, 550);
             this.Reminders.TabIndex = 7;
             this.Reminders.Text = "tabPage1";
             // 
+            // customMenu1
+            // 
+            this.customMenu1.AllowAnimations = false;
+            this.customMenu1.AllowBorderColorChanges = false;
+            this.customMenu1.AllowMouseEffects = false;
+            this.customMenu1.AnimationSpeed = 200;
+            this.customMenu1.BackColor = System.Drawing.Color.Transparent;
+            this.customMenu1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.customMenu1.BorderColor = System.Drawing.Color.Transparent;
+            this.customMenu1.BorderRadius = 5;
+            this.customMenu1.BorderStyle = Bunifu.UI.WinForms.BunifuUserControl.BorderStyles.Solid;
+            this.customMenu1.BorderThickness = 1;
+            this.customMenu1.ColorContrastOnClick = 30;
+            this.customMenu1.ColorContrastOnHover = 30;
+            this.customMenu1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.customMenu1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.customMenu1.Image = null;
+            this.customMenu1.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.customMenu1.Location = new System.Drawing.Point(0, 0);
+            this.customMenu1.Name = "customMenu1";
+            this.customMenu1.ShowBorders = true;
+            this.customMenu1.Size = new System.Drawing.Size(310, 558);
+            this.customMenu1.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
+            this.customMenu1.TabIndex = 4;
+            this.customMenu1.SelectedIndexChanged += new System.EventHandler(this.customMenu1_SelectedIndexChanged);
+            // 
+            // customCard1
+            // 
+            this.customCard1.AllowAnimations = false;
+            this.customCard1.AllowBorderColorChanges = false;
+            this.customCard1.AllowMouseEffects = false;
+            this.customCard1.AnimationSpeed = 200;
+            this.customCard1.BackColor = System.Drawing.Color.Transparent;
+            this.customCard1.BackgroundColor = System.Drawing.Color.Empty;
+            this.customCard1.BorderColor = System.Drawing.Color.Transparent;
+            this.customCard1.BorderRadius = 25;
+            this.customCard1.BorderStyle = Bunifu.UI.WinForms.BunifuUserControl.BorderStyles.Solid;
+            this.customCard1.BorderThickness = 0;
+            this.customCard1.ColorContrastOnClick = 30;
+            this.customCard1.ColorContrastOnHover = 30;
+            this.customCard1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.customCard1.Image = null;
+            this.customCard1.ImageMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.customCard1.Location = new System.Drawing.Point(3, 3);
+            this.customCard1.Name = "customCard1";
+            this.customCard1.ShowBorders = true;
+            this.customCard1.Size = new System.Drawing.Size(243, 346);
+            this.customCard1.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
+            this.customCard1.TabIndex = 0;
+            //
             // bunifuImageButton1
             // 
             this.bunifuImageButton1.ActiveImage = null;
