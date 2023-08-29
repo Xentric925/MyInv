@@ -50,7 +50,9 @@ namespace MyInv
 
         }
 
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        
+
+        private void bunifuImageButton1_Click_1(object sender, EventArgs e)
         {
             frmReminders frm = new frmReminders();
             frm.Show();
