@@ -40,6 +40,7 @@
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.Products = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnAddProduct = new Bunifu.UI.WinForms.BunifuImageButton();
             this.Receipts = new System.Windows.Forms.TabPage();
             this.Invoices = new System.Windows.Forms.TabPage();
             this.Suppliers = new System.Windows.Forms.TabPage();
@@ -49,12 +50,14 @@
             this.Reminders = new System.Windows.Forms.TabPage();
             this.customMenu1 = new MyInv.customMenu();
             this.customCard1 = new MyInv.CustomCard();
+            this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuPanel1.SuspendLayout();
             this.bunifuPanel2.SuspendLayout();
             this.bunifuPanel3.SuspendLayout();
             this.guna2TabControl1.SuspendLayout();
             this.Products.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            this.Reminders.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuFormDrag1
@@ -302,11 +305,48 @@
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Controls.Add(this.customCard1);
+            this.flowLayoutPanel1.Controls.Add(this.btnAddProduct);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(873, 544);
             this.flowLayoutPanel1.TabIndex = 0;
+            
+            // 
+            // btnAddProduct
+            // 
+            this.btnAddProduct.ActiveImage = null;
+            this.btnAddProduct.AllowAnimations = true;
+            this.btnAddProduct.AllowBuffering = false;
+            this.btnAddProduct.AllowToggling = false;
+            this.btnAddProduct.AllowZooming = true;
+            this.btnAddProduct.AllowZoomingOnFocus = false;
+            this.btnAddProduct.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddProduct.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAddProduct.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnAddProduct.ErrorImage")));
+            this.btnAddProduct.FadeWhenInactive = false;
+            this.btnAddProduct.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.btnAddProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnAddProduct.Image")));
+            this.btnAddProduct.ImageActive = null;
+            this.btnAddProduct.ImageLocation = null;
+            this.btnAddProduct.ImageMargin = 20;
+            this.btnAddProduct.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnAddProduct.ImageZoomSize = new System.Drawing.Size(50, 50);
+            this.btnAddProduct.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnAddProduct.InitialImage")));
+            this.btnAddProduct.Location = new System.Drawing.Point(259, 3);
+            this.btnAddProduct.Name = "btnAddProduct";
+            this.btnAddProduct.Rotation = 0;
+            this.btnAddProduct.ShowActiveImage = true;
+            this.btnAddProduct.ShowCursorChanges = true;
+            this.btnAddProduct.ShowImageBorders = true;
+            this.btnAddProduct.ShowSizeMarkers = false;
+            this.btnAddProduct.Size = new System.Drawing.Size(50, 50);
+            this.btnAddProduct.TabIndex = 6;
+            this.btnAddProduct.ToolTipText = "";
+            this.btnAddProduct.WaitOnLoad = false;
+            this.btnAddProduct.Zoom = 20;
+            this.btnAddProduct.ZoomSpeed = 10;
+            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click_1);
             // 
             // Receipts
             // 
@@ -373,6 +413,7 @@
             // Reminders
             // 
             this.Reminders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.Reminders.Controls.Add(this.bunifuImageButton1);
             this.Reminders.ForeColor = System.Drawing.Color.Beige;
             this.Reminders.Location = new System.Drawing.Point(184, 4);
             this.Reminders.Name = "Reminders";
@@ -429,6 +470,41 @@
             this.customCard1.Size = new System.Drawing.Size(243, 346);
             this.customCard1.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
             this.customCard1.TabIndex = 0;
+            //
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.ActiveImage = null;
+            this.bunifuImageButton1.AllowAnimations = true;
+            this.bunifuImageButton1.AllowBuffering = false;
+            this.bunifuImageButton1.AllowToggling = false;
+            this.bunifuImageButton1.AllowZooming = true;
+            this.bunifuImageButton1.AllowZoomingOnFocus = false;
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuImageButton1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.ErrorImage")));
+            this.bunifuImageButton1.FadeWhenInactive = false;
+            this.bunifuImageButton1.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.ImageLocation = null;
+            this.bunifuImageButton1.ImageMargin = 20;
+            this.bunifuImageButton1.ImageSize = new System.Drawing.Size(30, 30);
+            this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(50, 50);
+            this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
+            this.bunifuImageButton1.Location = new System.Drawing.Point(414, 250);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Rotation = 0;
+            this.bunifuImageButton1.ShowActiveImage = true;
+            this.bunifuImageButton1.ShowCursorChanges = true;
+            this.bunifuImageButton1.ShowImageBorders = true;
+            this.bunifuImageButton1.ShowSizeMarkers = false;
+            this.bunifuImageButton1.Size = new System.Drawing.Size(50, 50);
+            this.bunifuImageButton1.TabIndex = 8;
+            this.bunifuImageButton1.ToolTipText = "";
+            this.bunifuImageButton1.WaitOnLoad = false;
+            this.bunifuImageButton1.Zoom = 20;
+            this.bunifuImageButton1.ZoomSpeed = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // Main
             // 
@@ -450,6 +526,7 @@
             this.guna2TabControl1.ResumeLayout(false);
             this.Products.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.Reminders.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -475,6 +552,8 @@
         private Bunifu.UI.WinForms.BunifuFormControlBox bunifuFormControlBox1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private CustomCard customCard1;
+        private Bunifu.UI.WinForms.BunifuImageButton btnAddProduct;
+        private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton1;
     }
 }
 

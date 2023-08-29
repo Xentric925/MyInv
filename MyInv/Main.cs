@@ -35,5 +35,20 @@ namespace MyInv
         {
 
         }
+
+       
+
+        private void btnAddProduct_Click_1(object sender, EventArgs e)
+        {
+            // Instantiate the new form
+            FrmAddProduct frm = new FrmAddProduct();
+            frm.Show();
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            frmReminders frm = new frmReminders();
+            frm.Show();
+        }
     }
 }
