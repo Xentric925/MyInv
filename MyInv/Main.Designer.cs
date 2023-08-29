@@ -134,7 +134,7 @@
             this.bunifuFormControlBox1.HelpBoxOptions.IconSize = new System.Drawing.Size(22, 22);
             this.bunifuFormControlBox1.HelpBoxOptions.PressedColor = System.Drawing.Color.Silver;
             this.bunifuFormControlBox1.Location = new System.Drawing.Point(1060, -2);
-            this.bunifuFormControlBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuFormControlBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuFormControlBox1.MaximizeBox = true;
             this.bunifuFormControlBox1.MaximizeBoxOptions.BackColor = System.Drawing.Color.Transparent;
             this.bunifuFormControlBox1.MaximizeBoxOptions.BorderRadius = 0;
@@ -311,6 +311,7 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(873, 544);
             this.flowLayoutPanel1.TabIndex = 0;
+            
             // 
             // btnAddProduct
             // 
@@ -414,9 +415,9 @@
             this.Reminders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.Reminders.Controls.Add(this.bunifuImageButton1);
             this.Reminders.ForeColor = System.Drawing.Color.Beige;
-            this.Reminders.Location = new System.Drawing.Point(5, 4);
+            this.Reminders.Location = new System.Drawing.Point(184, 4);
             this.Reminders.Name = "Reminders";
-            this.Reminders.Size = new System.Drawing.Size(879, 550);
+            this.Reminders.Size = new System.Drawing.Size(700, 550);
             this.Reminders.TabIndex = 7;
             this.Reminders.Text = "tabPage1";
             // 
@@ -445,7 +446,6 @@
             this.customMenu1.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
             this.customMenu1.TabIndex = 4;
             this.customMenu1.SelectedIndexChanged += new System.EventHandler(this.customMenu1_SelectedIndexChanged);
-            this.customMenu1.Click += new System.EventHandler(this.customMenu1_Click);
             // 
             // customCard1
             // 
@@ -454,24 +454,23 @@
             this.customCard1.AllowMouseEffects = false;
             this.customCard1.AnimationSpeed = 200;
             this.customCard1.BackColor = System.Drawing.Color.Transparent;
-            this.customCard1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(140)))));
-            this.customCard1.BorderColor = System.Drawing.Color.Black;
+            this.customCard1.BackgroundColor = System.Drawing.Color.Empty;
+            this.customCard1.BorderColor = System.Drawing.Color.Transparent;
             this.customCard1.BorderRadius = 25;
             this.customCard1.BorderStyle = Bunifu.UI.WinForms.BunifuUserControl.BorderStyles.Solid;
-            this.customCard1.BorderThickness = 1;
+            this.customCard1.BorderThickness = 0;
             this.customCard1.ColorContrastOnClick = 30;
             this.customCard1.ColorContrastOnHover = 30;
-            this.customCard1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.customCard1.Cursor = System.Windows.Forms.Cursors.Default;
             this.customCard1.Image = null;
-            this.customCard1.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.customCard1.ImageMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.customCard1.Location = new System.Drawing.Point(3, 3);
             this.customCard1.Name = "customCard1";
-            this.customCard1.Padding = new System.Windows.Forms.Padding(3, 8, 2, 1);
             this.customCard1.ShowBorders = true;
-            this.customCard1.Size = new System.Drawing.Size(250, 400);
+            this.customCard1.Size = new System.Drawing.Size(243, 346);
             this.customCard1.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
             this.customCard1.TabIndex = 0;
-            // 
+            //
             // bunifuImageButton1
             // 
             this.bunifuImageButton1.ActiveImage = null;
@@ -505,6 +504,7 @@
             this.bunifuImageButton1.WaitOnLoad = false;
             this.bunifuImageButton1.Zoom = 20;
             this.bunifuImageButton1.ZoomSpeed = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // Main
             // 
