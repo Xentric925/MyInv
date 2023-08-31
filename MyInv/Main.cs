@@ -50,5 +50,15 @@ namespace MyInv
             frmReminders frm = new frmReminders();
             frm.Show();
         }
+
+        private void customCard2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Scroll(object sender, ScrollEventArgs e)
+        {
+            flowLayoutPanel1.Invalidate();
+        }
     }
 }

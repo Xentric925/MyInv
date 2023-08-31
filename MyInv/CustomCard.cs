@@ -1,6 +1,7 @@
 ﻿using Bunifu.UI.WinForms;
 using Bunifu.UI.WinForms.BunifuAnimatorNS;
 using BunifuAnimatorNS;
+using Guna.UI2.WinForms;
 using Guna.UI2.WinForms.Suite;
 using System;
 using System.Collections.Generic;
@@ -76,7 +77,7 @@ namespace MyInv
                 guna2Panel1.CustomizableEdges.BottomRight = false;
                 guna2Panel1.BorderThickness = 0;
                 guna2Panel1.BorderColor = Color.Transparent;
-                b.ShowSync(guna2Panel2, false, BunifuAnimatorNS.Animation.HorizSlide);
+                guna2Panel2.Visible = true;
                 border.BorderThickness = 1;
                 border.BorderColor = Color.Black;
 
@@ -89,13 +90,19 @@ namespace MyInv
             guna2Panel1.CustomizableEdges.TopRight = true;
             guna2Panel1.CustomizableEdges.BottomRight = true;
             guna2Panel1.CustomBorderThickness = new Padding(1, 1, 1, 1);
-            b.HideSync(guna2Panel2, false, BunifuAnimatorNS.Animation.HorizSlide);
+            guna2Panel2.Visible = false;
             border.BorderThickness = 0;
             guna2Panel1.BorderColor = Color.Black;
             border.BorderColor = Color.Transparent;
             guna2Panel1.BorderThickness = 1;
             this.Width = 243;
             pressed = false;
+        }
+
+        private void flowLayoutPanel1_Scroll(object sender, ScrollEventArgs e)
+        {
+            flowLayoutPanel1.Invalidate();
+            
         }
 
         private void btn_MouseLeave(object sender, EventArgs e)

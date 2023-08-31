@@ -261,6 +261,12 @@
     <Compile Include="frmReminders.Designer.cs">
       <DependentUpon>frmReminders.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSupliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSupliers.Designer.cs">
+      <DependentUpon>frmSupliers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -286,6 +292,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmReminders.resx">
       <DependentUpon>frmReminders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSupliers.resx">
+      <DependentUpon>frmSupliers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

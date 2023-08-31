@@ -48,9 +48,19 @@
             this.Payments = new System.Windows.Forms.TabPage();
             this.Installments = new System.Windows.Forms.TabPage();
             this.Reminders = new System.Windows.Forms.TabPage();
+            this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.customMenu1 = new MyInv.customMenu();
             this.customCard1 = new MyInv.CustomCard();
-            this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.customCard2 = new MyInv.CustomCard();
+            this.customCard3 = new MyInv.CustomCard();
+            this.customCard4 = new MyInv.CustomCard();
+            this.customCard5 = new MyInv.CustomCard();
+            this.customCard6 = new MyInv.CustomCard();
+            this.customCard7 = new MyInv.CustomCard();
+            this.customCard8 = new MyInv.CustomCard();
+            this.customCard9 = new MyInv.CustomCard();
+            this.customCard10 = new MyInv.CustomCard();
+            this.customCard11 = new MyInv.CustomCard();
             this.bunifuPanel1.SuspendLayout();
             this.bunifuPanel2.SuspendLayout();
             this.bunifuPanel3.SuspendLayout();
@@ -134,7 +144,7 @@
             this.bunifuFormControlBox1.HelpBoxOptions.IconSize = new System.Drawing.Size(22, 22);
             this.bunifuFormControlBox1.HelpBoxOptions.PressedColor = System.Drawing.Color.Silver;
             this.bunifuFormControlBox1.Location = new System.Drawing.Point(1060, -2);
-            this.bunifuFormControlBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuFormControlBox1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuFormControlBox1.MaximizeBox = true;
             this.bunifuFormControlBox1.MaximizeBoxOptions.BackColor = System.Drawing.Color.Transparent;
             this.bunifuFormControlBox1.MaximizeBoxOptions.BorderRadius = 0;
@@ -304,14 +314,24 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.customCard1);
             this.flowLayoutPanel1.Controls.Add(this.btnAddProduct);
+            this.flowLayoutPanel1.Controls.Add(this.customCard1);
+            this.flowLayoutPanel1.Controls.Add(this.customCard2);
+            this.flowLayoutPanel1.Controls.Add(this.customCard3);
+            this.flowLayoutPanel1.Controls.Add(this.customCard4);
+            this.flowLayoutPanel1.Controls.Add(this.customCard5);
+            this.flowLayoutPanel1.Controls.Add(this.customCard6);
+            this.flowLayoutPanel1.Controls.Add(this.customCard7);
+            this.flowLayoutPanel1.Controls.Add(this.customCard8);
+            this.flowLayoutPanel1.Controls.Add(this.customCard9);
+            this.flowLayoutPanel1.Controls.Add(this.customCard10);
+            this.flowLayoutPanel1.Controls.Add(this.customCard11);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(873, 544);
             this.flowLayoutPanel1.TabIndex = 0;
-            
+            this.flowLayoutPanel1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.flowLayoutPanel1_Scroll);
             // 
             // btnAddProduct
             // 
@@ -333,7 +353,7 @@
             this.btnAddProduct.ImageSize = new System.Drawing.Size(30, 30);
             this.btnAddProduct.ImageZoomSize = new System.Drawing.Size(50, 50);
             this.btnAddProduct.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnAddProduct.InitialImage")));
-            this.btnAddProduct.Location = new System.Drawing.Point(259, 3);
+            this.btnAddProduct.Location = new System.Drawing.Point(3, 3);
             this.btnAddProduct.Name = "btnAddProduct";
             this.btnAddProduct.Rotation = 0;
             this.btnAddProduct.ShowActiveImage = true;
@@ -421,6 +441,41 @@
             this.Reminders.TabIndex = 7;
             this.Reminders.Text = "tabPage1";
             // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.ActiveImage = null;
+            this.bunifuImageButton1.AllowAnimations = true;
+            this.bunifuImageButton1.AllowBuffering = false;
+            this.bunifuImageButton1.AllowToggling = false;
+            this.bunifuImageButton1.AllowZooming = true;
+            this.bunifuImageButton1.AllowZoomingOnFocus = false;
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuImageButton1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.ErrorImage")));
+            this.bunifuImageButton1.FadeWhenInactive = false;
+            this.bunifuImageButton1.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.ImageLocation = null;
+            this.bunifuImageButton1.ImageMargin = 20;
+            this.bunifuImageButton1.ImageSize = new System.Drawing.Size(30, 30);
+            this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(50, 50);
+            this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
+            this.bunifuImageButton1.Location = new System.Drawing.Point(414, 250);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Rotation = 0;
+            this.bunifuImageButton1.ShowActiveImage = true;
+            this.bunifuImageButton1.ShowCursorChanges = true;
+            this.bunifuImageButton1.ShowImageBorders = true;
+            this.bunifuImageButton1.ShowSizeMarkers = false;
+            this.bunifuImageButton1.Size = new System.Drawing.Size(50, 50);
+            this.bunifuImageButton1.TabIndex = 8;
+            this.bunifuImageButton1.ToolTipText = "";
+            this.bunifuImageButton1.WaitOnLoad = false;
+            this.bunifuImageButton1.Zoom = 20;
+            this.bunifuImageButton1.ZoomSpeed = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
             // customMenu1
             // 
             this.customMenu1.AllowAnimations = false;
@@ -464,47 +519,252 @@
             this.customCard1.Cursor = System.Windows.Forms.Cursors.Default;
             this.customCard1.Image = null;
             this.customCard1.ImageMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            this.customCard1.Location = new System.Drawing.Point(3, 3);
+            this.customCard1.Location = new System.Drawing.Point(59, 3);
             this.customCard1.Name = "customCard1";
             this.customCard1.ShowBorders = true;
             this.customCard1.Size = new System.Drawing.Size(243, 346);
             this.customCard1.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
-            this.customCard1.TabIndex = 0;
-            //
-            // bunifuImageButton1
+            this.customCard1.TabIndex = 7;
             // 
-            this.bunifuImageButton1.ActiveImage = null;
-            this.bunifuImageButton1.AllowAnimations = true;
-            this.bunifuImageButton1.AllowBuffering = false;
-            this.bunifuImageButton1.AllowToggling = false;
-            this.bunifuImageButton1.AllowZooming = true;
-            this.bunifuImageButton1.AllowZoomingOnFocus = false;
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bunifuImageButton1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.ErrorImage")));
-            this.bunifuImageButton1.FadeWhenInactive = false;
-            this.bunifuImageButton1.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.ImageLocation = null;
-            this.bunifuImageButton1.ImageMargin = 20;
-            this.bunifuImageButton1.ImageSize = new System.Drawing.Size(30, 30);
-            this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(50, 50);
-            this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
-            this.bunifuImageButton1.Location = new System.Drawing.Point(414, 250);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Rotation = 0;
-            this.bunifuImageButton1.ShowActiveImage = true;
-            this.bunifuImageButton1.ShowCursorChanges = true;
-            this.bunifuImageButton1.ShowImageBorders = true;
-            this.bunifuImageButton1.ShowSizeMarkers = false;
-            this.bunifuImageButton1.Size = new System.Drawing.Size(50, 50);
-            this.bunifuImageButton1.TabIndex = 8;
-            this.bunifuImageButton1.ToolTipText = "";
-            this.bunifuImageButton1.WaitOnLoad = false;
-            this.bunifuImageButton1.Zoom = 20;
-            this.bunifuImageButton1.ZoomSpeed = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // customCard2
+            // 
+            this.customCard2.AllowAnimations = false;
+            this.customCard2.AllowBorderColorChanges = false;
+            this.customCard2.AllowMouseEffects = false;
+            this.customCard2.AnimationSpeed = 200;
+            this.customCard2.BackColor = System.Drawing.Color.Transparent;
+            this.customCard2.BackgroundColor = System.Drawing.Color.Empty;
+            this.customCard2.BorderColor = System.Drawing.Color.Transparent;
+            this.customCard2.BorderRadius = 25;
+            this.customCard2.BorderStyle = Bunifu.UI.WinForms.BunifuUserControl.BorderStyles.Solid;
+            this.customCard2.BorderThickness = 0;
+            this.customCard2.ColorContrastOnClick = 30;
+            this.customCard2.ColorContrastOnHover = 30;
+            this.customCard2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.customCard2.Image = null;
+            this.customCard2.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.customCard2.Location = new System.Drawing.Point(308, 3);
+            this.customCard2.Name = "customCard2";
+            this.customCard2.ShowBorders = true;
+            this.customCard2.Size = new System.Drawing.Size(243, 346);
+            this.customCard2.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
+            this.customCard2.TabIndex = 8;
+            // 
+            // customCard3
+            // 
+            this.customCard3.AllowAnimations = false;
+            this.customCard3.AllowBorderColorChanges = false;
+            this.customCard3.AllowMouseEffects = false;
+            this.customCard3.AnimationSpeed = 200;
+            this.customCard3.BackColor = System.Drawing.Color.Transparent;
+            this.customCard3.BackgroundColor = System.Drawing.Color.Empty;
+            this.customCard3.BorderColor = System.Drawing.Color.Transparent;
+            this.customCard3.BorderRadius = 25;
+            this.customCard3.BorderStyle = Bunifu.UI.WinForms.BunifuUserControl.BorderStyles.Solid;
+            this.customCard3.BorderThickness = 0;
+            this.customCard3.ColorContrastOnClick = 30;
+            this.customCard3.ColorContrastOnHover = 30;
+            this.customCard3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.customCard3.Image = null;
+            this.customCard3.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.customCard3.Location = new System.Drawing.Point(557, 3);
+            this.customCard3.Name = "customCard3";
+            this.customCard3.ShowBorders = true;
+            this.customCard3.Size = new System.Drawing.Size(243, 346);
+            this.customCard3.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
+            this.customCard3.TabIndex = 9;
+            // 
+            // customCard4
+            // 
+            this.customCard4.AllowAnimations = false;
+            this.customCard4.AllowBorderColorChanges = false;
+            this.customCard4.AllowMouseEffects = false;
+            this.customCard4.AnimationSpeed = 200;
+            this.customCard4.BackColor = System.Drawing.Color.Transparent;
+            this.customCard4.BackgroundColor = System.Drawing.Color.Empty;
+            this.customCard4.BorderColor = System.Drawing.Color.Transparent;
+            this.customCard4.BorderRadius = 25;
+            this.customCard4.BorderStyle = Bunifu.UI.WinForms.BunifuUserControl.BorderStyles.Solid;
+            this.customCard4.BorderThickness = 0;
+            this.customCard4.ColorContrastOnClick = 30;
+            this.customCard4.ColorContrastOnHover = 30;
+            this.customCard4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.customCard4.Image = null;
+            this.customCard4.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.customCard4.Location = new System.Drawing.Point(3, 355);
+            this.customCard4.Name = "customCard4";
+            this.customCard4.ShowBorders = true;
+            this.customCard4.Size = new System.Drawing.Size(243, 346);
+            this.customCard4.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
+            this.customCard4.TabIndex = 10;
+            // 
+            // customCard5
+            // 
+            this.customCard5.AllowAnimations = false;
+            this.customCard5.AllowBorderColorChanges = false;
+            this.customCard5.AllowMouseEffects = false;
+            this.customCard5.AnimationSpeed = 200;
+            this.customCard5.BackColor = System.Drawing.Color.Transparent;
+            this.customCard5.BackgroundColor = System.Drawing.Color.Empty;
+            this.customCard5.BorderColor = System.Drawing.Color.Transparent;
+            this.customCard5.BorderRadius = 25;
+            this.customCard5.BorderStyle = Bunifu.UI.WinForms.BunifuUserControl.BorderStyles.Solid;
+            this.customCard5.BorderThickness = 0;
+            this.customCard5.ColorContrastOnClick = 30;
+            this.customCard5.ColorContrastOnHover = 30;
+            this.customCard5.Cursor = System.Windows.Forms.Cursors.Default;
+            this.customCard5.Image = null;
+            this.customCard5.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.customCard5.Location = new System.Drawing.Point(252, 355);
+            this.customCard5.Name = "customCard5";
+            this.customCard5.ShowBorders = true;
+            this.customCard5.Size = new System.Drawing.Size(243, 346);
+            this.customCard5.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
+            this.customCard5.TabIndex = 11;
+            // 
+            // customCard6
+            // 
+            this.customCard6.AllowAnimations = false;
+            this.customCard6.AllowBorderColorChanges = false;
+            this.customCard6.AllowMouseEffects = false;
+            this.customCard6.AnimationSpeed = 200;
+            this.customCard6.BackColor = System.Drawing.Color.Transparent;
+            this.customCard6.BackgroundColor = System.Drawing.Color.Empty;
+            this.customCard6.BorderColor = System.Drawing.Color.Transparent;
+            this.customCard6.BorderRadius = 25;
+            this.customCard6.BorderStyle = Bunifu.UI.WinForms.BunifuUserControl.BorderStyles.Solid;
+            this.customCard6.BorderThickness = 0;
+            this.customCard6.ColorContrastOnClick = 30;
+            this.customCard6.ColorContrastOnHover = 30;
+            this.customCard6.Cursor = System.Windows.Forms.Cursors.Default;
+            this.customCard6.Image = null;
+            this.customCard6.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.customCard6.Location = new System.Drawing.Point(501, 355);
+            this.customCard6.Name = "customCard6";
+            this.customCard6.ShowBorders = true;
+            this.customCard6.Size = new System.Drawing.Size(243, 346);
+            this.customCard6.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
+            this.customCard6.TabIndex = 12;
+            // 
+            // customCard7
+            // 
+            this.customCard7.AllowAnimations = false;
+            this.customCard7.AllowBorderColorChanges = false;
+            this.customCard7.AllowMouseEffects = false;
+            this.customCard7.AnimationSpeed = 200;
+            this.customCard7.BackColor = System.Drawing.Color.Transparent;
+            this.customCard7.BackgroundColor = System.Drawing.Color.Empty;
+            this.customCard7.BorderColor = System.Drawing.Color.Transparent;
+            this.customCard7.BorderRadius = 25;
+            this.customCard7.BorderStyle = Bunifu.UI.WinForms.BunifuUserControl.BorderStyles.Solid;
+            this.customCard7.BorderThickness = 0;
+            this.customCard7.ColorContrastOnClick = 30;
+            this.customCard7.ColorContrastOnHover = 30;
+            this.customCard7.Cursor = System.Windows.Forms.Cursors.Default;
+            this.customCard7.Image = null;
+            this.customCard7.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.customCard7.Location = new System.Drawing.Point(3, 707);
+            this.customCard7.Name = "customCard7";
+            this.customCard7.ShowBorders = true;
+            this.customCard7.Size = new System.Drawing.Size(243, 346);
+            this.customCard7.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
+            this.customCard7.TabIndex = 13;
+            // 
+            // customCard8
+            // 
+            this.customCard8.AllowAnimations = false;
+            this.customCard8.AllowBorderColorChanges = false;
+            this.customCard8.AllowMouseEffects = false;
+            this.customCard8.AnimationSpeed = 200;
+            this.customCard8.BackColor = System.Drawing.Color.Transparent;
+            this.customCard8.BackgroundColor = System.Drawing.Color.Empty;
+            this.customCard8.BorderColor = System.Drawing.Color.Transparent;
+            this.customCard8.BorderRadius = 25;
+            this.customCard8.BorderStyle = Bunifu.UI.WinForms.BunifuUserControl.BorderStyles.Solid;
+            this.customCard8.BorderThickness = 0;
+            this.customCard8.ColorContrastOnClick = 30;
+            this.customCard8.ColorContrastOnHover = 30;
+            this.customCard8.Cursor = System.Windows.Forms.Cursors.Default;
+            this.customCard8.Image = null;
+            this.customCard8.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.customCard8.Location = new System.Drawing.Point(252, 707);
+            this.customCard8.Name = "customCard8";
+            this.customCard8.ShowBorders = true;
+            this.customCard8.Size = new System.Drawing.Size(243, 346);
+            this.customCard8.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
+            this.customCard8.TabIndex = 14;
+            // 
+            // customCard9
+            // 
+            this.customCard9.AllowAnimations = false;
+            this.customCard9.AllowBorderColorChanges = false;
+            this.customCard9.AllowMouseEffects = false;
+            this.customCard9.AnimationSpeed = 200;
+            this.customCard9.BackColor = System.Drawing.Color.Transparent;
+            this.customCard9.BackgroundColor = System.Drawing.Color.Empty;
+            this.customCard9.BorderColor = System.Drawing.Color.Transparent;
+            this.customCard9.BorderRadius = 25;
+            this.customCard9.BorderStyle = Bunifu.UI.WinForms.BunifuUserControl.BorderStyles.Solid;
+            this.customCard9.BorderThickness = 0;
+            this.customCard9.ColorContrastOnClick = 30;
+            this.customCard9.ColorContrastOnHover = 30;
+            this.customCard9.Cursor = System.Windows.Forms.Cursors.Default;
+            this.customCard9.Image = null;
+            this.customCard9.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.customCard9.Location = new System.Drawing.Point(501, 707);
+            this.customCard9.Name = "customCard9";
+            this.customCard9.ShowBorders = true;
+            this.customCard9.Size = new System.Drawing.Size(243, 346);
+            this.customCard9.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
+            this.customCard9.TabIndex = 15;
+            // 
+            // customCard10
+            // 
+            this.customCard10.AllowAnimations = false;
+            this.customCard10.AllowBorderColorChanges = false;
+            this.customCard10.AllowMouseEffects = false;
+            this.customCard10.AnimationSpeed = 200;
+            this.customCard10.BackColor = System.Drawing.Color.Transparent;
+            this.customCard10.BackgroundColor = System.Drawing.Color.Empty;
+            this.customCard10.BorderColor = System.Drawing.Color.Transparent;
+            this.customCard10.BorderRadius = 25;
+            this.customCard10.BorderStyle = Bunifu.UI.WinForms.BunifuUserControl.BorderStyles.Solid;
+            this.customCard10.BorderThickness = 0;
+            this.customCard10.ColorContrastOnClick = 30;
+            this.customCard10.ColorContrastOnHover = 30;
+            this.customCard10.Cursor = System.Windows.Forms.Cursors.Default;
+            this.customCard10.Image = null;
+            this.customCard10.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.customCard10.Location = new System.Drawing.Point(3, 1059);
+            this.customCard10.Name = "customCard10";
+            this.customCard10.ShowBorders = true;
+            this.customCard10.Size = new System.Drawing.Size(243, 346);
+            this.customCard10.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
+            this.customCard10.TabIndex = 16;
+            // 
+            // customCard11
+            // 
+            this.customCard11.AllowAnimations = false;
+            this.customCard11.AllowBorderColorChanges = false;
+            this.customCard11.AllowMouseEffects = false;
+            this.customCard11.AnimationSpeed = 200;
+            this.customCard11.BackColor = System.Drawing.Color.Transparent;
+            this.customCard11.BackgroundColor = System.Drawing.Color.Empty;
+            this.customCard11.BorderColor = System.Drawing.Color.Transparent;
+            this.customCard11.BorderRadius = 25;
+            this.customCard11.BorderStyle = Bunifu.UI.WinForms.BunifuUserControl.BorderStyles.Solid;
+            this.customCard11.BorderThickness = 0;
+            this.customCard11.ColorContrastOnClick = 30;
+            this.customCard11.ColorContrastOnHover = 30;
+            this.customCard11.Cursor = System.Windows.Forms.Cursors.Default;
+            this.customCard11.Image = null;
+            this.customCard11.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.customCard11.Location = new System.Drawing.Point(252, 1059);
+            this.customCard11.Name = "customCard11";
+            this.customCard11.ShowBorders = true;
+            this.customCard11.Size = new System.Drawing.Size(243, 346);
+            this.customCard11.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
+            this.customCard11.TabIndex = 17;
             // 
             // Main
             // 
@@ -551,9 +811,19 @@
         private System.Windows.Forms.TabPage Reminders;
         private Bunifu.UI.WinForms.BunifuFormControlBox bunifuFormControlBox1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private CustomCard customCard1;
         private Bunifu.UI.WinForms.BunifuImageButton btnAddProduct;
         private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton1;
+        private CustomCard customCard1;
+        private CustomCard customCard2;
+        private CustomCard customCard3;
+        private CustomCard customCard4;
+        private CustomCard customCard5;
+        private CustomCard customCard6;
+        private CustomCard customCard7;
+        private CustomCard customCard8;
+        private CustomCard customCard9;
+        private CustomCard customCard10;
+        private CustomCard customCard11;
     }
 }
 

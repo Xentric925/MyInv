@@ -286,7 +286,7 @@
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(180, 45);
             this.guna2GradientButton1.TabIndex = 19;
-            this.guna2GradientButton1.Text = "guna2GradientButton1";
+            this.guna2GradientButton1.Text = "Add Reminder";
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // txtTime
