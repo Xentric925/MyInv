@@ -181,9 +181,9 @@ namespace MyInv
 
         }
 
-        private void txtTime_TextChanged(object sender, EventArgs e)
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
     
