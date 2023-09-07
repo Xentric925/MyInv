@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReminders));
             this.bunifuLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.bunifuLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -45,39 +46,41 @@
             this.txtTime = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbDays = new System.Windows.Forms.ComboBox();
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumMin)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuLabel1
             // 
+            this.bunifuLabel1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel1.Location = new System.Drawing.Point(34, 60);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.bunifuLabel1.Location = new System.Drawing.Point(26, 41);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(88, 20);
+            this.bunifuLabel1.Size = new System.Drawing.Size(127, 30);
             this.bunifuLabel1.TabIndex = 0;
             this.bunifuLabel1.Text = "Choose Date:";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             // 
             // bunifuLabel2
             // 
-            this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.Location = new System.Drawing.Point(26, 167);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(91, 20);
+            this.bunifuLabel2.Size = new System.Drawing.Size(134, 30);
             this.bunifuLabel2.TabIndex = 1;
-            this.bunifuLabel2.Text = "choose Time :";
-            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel2.Text = "Choose Time :";
             // 
             // chkNotifyme
             // 
             this.chkNotifyme.AutoSize = true;
-            this.chkNotifyme.Location = new System.Drawing.Point(397, 41);
+            this.chkNotifyme.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkNotifyme.Location = new System.Drawing.Point(376, 41);
             this.chkNotifyme.Name = "chkNotifyme";
-            this.chkNotifyme.Size = new System.Drawing.Size(188, 20);
+            this.chkNotifyme.Size = new System.Drawing.Size(247, 27);
             this.chkNotifyme.TabIndex = 5;
             this.chkNotifyme.Text = "Notify me on thesame date";
             this.chkNotifyme.UseVisualStyleBackColor = true;
@@ -86,77 +89,56 @@
             // chkEmail
             // 
             this.chkEmail.AutoSize = true;
-            this.chkEmail.Location = new System.Drawing.Point(601, 41);
+            this.chkEmail.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEmail.Location = new System.Drawing.Point(376, 86);
             this.chkEmail.Name = "chkEmail";
-            this.chkEmail.Size = new System.Drawing.Size(167, 20);
+            this.chkEmail.Size = new System.Drawing.Size(221, 27);
             this.chkEmail.TabIndex = 6;
             this.chkEmail.Text = "Notify Client/sendEmail";
             this.chkEmail.UseVisualStyleBackColor = true;
             // 
             // txtMemo
             // 
-            this.txtMemo.AcceptsReturn = false;
-            this.txtMemo.AcceptsTab = false;
-            this.txtMemo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtMemo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtMemo.BackColor = System.Drawing.Color.Transparent;
+            this.txtMemo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(97)))), ((int)(((byte)(77)))));
             this.txtMemo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtMemo.BackgroundImage")));
             this.txtMemo.BorderColor = System.Drawing.Color.DodgerBlue;
             this.txtMemo.BorderRadius = 1;
-            this.txtMemo.BorderThickness = 1;
-            this.txtMemo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtMemo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMemo.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txtMemo.DefaultText = "";
-            this.txtMemo.FillColor = System.Drawing.Color.White;
-            this.txtMemo.HideSelection = true;
-            this.txtMemo.IconLeft = null;
+            this.txtMemo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(97)))), ((int)(((byte)(77)))));
+            this.txtMemo.Font = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtMemo.ForeColor = System.Drawing.Color.Empty;
             this.txtMemo.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMemo.IconRight = null;
             this.txtMemo.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMemo.Lines = new string[0];
             this.txtMemo.Location = new System.Drawing.Point(381, 223);
-            this.txtMemo.MaxLength = 32767;
+            this.txtMemo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMemo.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtMemo.Modified = false;
-            this.txtMemo.Multiline = false;
             this.txtMemo.Name = "txtMemo";
-            txtMemo.BorderColor = System.Drawing.Color.DodgerBlue;
-            txtMemo.FillColor = System.Drawing.Color.Empty;
-            txtMemo.ForeColor = System.Drawing.Color.Empty;
-            txtMemo.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtMemo.Padding = new System.Windows.Forms.Padding(3);
             this.txtMemo.PasswordChar = '\0';
-            this.txtMemo.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtMemo.PlaceholderText = "Enter text";
-            this.txtMemo.ReadOnly = false;
-            this.txtMemo.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtMemo.PlaceholderForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtMemo.PlaceholderText = "Enter text here";
             this.txtMemo.SelectedText = "";
-            this.txtMemo.SelectionLength = 0;
-            this.txtMemo.SelectionStart = 0;
-            this.txtMemo.ShortcutsEnabled = true;
             this.txtMemo.Size = new System.Drawing.Size(387, 175);
             this.txtMemo.TabIndex = 7;
-            this.txtMemo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtMemo.PlaceholderText = "Enter text";
-            this.txtMemo.UseSystemPasswordChar = false;
-            this.txtMemo.WordWrap = true;
             // 
             // bunifuLabel3
             // 
-            this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel3.Location = new System.Drawing.Point(430, 148);
+            this.bunifuLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.bunifuLabel3.Location = new System.Drawing.Point(381, 167);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(121, 20);
+            this.bunifuLabel3.Size = new System.Drawing.Size(176, 30);
             this.bunifuLabel3.TabIndex = 8;
             this.bunifuLabel3.Text = "Enter your memo :";
-            this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             // 
             // numH
             // 
             this.numH.BackColor = System.Drawing.Color.Transparent;
+            this.numH.BorderColor = System.Drawing.Color.DodgerBlue;
             this.numH.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.numH.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(97)))), ((int)(((byte)(77)))));
             this.numH.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.numH.Location = new System.Drawing.Point(34, 223);
             this.numH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -168,7 +150,9 @@
             // NumMin
             // 
             this.NumMin.BackColor = System.Drawing.Color.Transparent;
+            this.NumMin.BorderColor = System.Drawing.Color.DodgerBlue;
             this.NumMin.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NumMin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(97)))), ((int)(((byte)(77)))));
             this.NumMin.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.NumMin.Location = new System.Drawing.Point(147, 223);
             this.NumMin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -180,39 +164,42 @@
             // chkAdvanceNotification
             // 
             this.chkAdvanceNotification.AutoSize = true;
-            this.chkAdvanceNotification.Location = new System.Drawing.Point(397, 92);
+            this.chkAdvanceNotification.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAdvanceNotification.Location = new System.Drawing.Point(376, 134);
             this.chkAdvanceNotification.Name = "chkAdvanceNotification";
-            this.chkAdvanceNotification.Size = new System.Drawing.Size(88, 20);
+            this.chkAdvanceNotification.Size = new System.Drawing.Size(116, 27);
             this.chkAdvanceNotification.TabIndex = 12;
             this.chkAdvanceNotification.Text = "Notify me ";
             this.chkAdvanceNotification.UseVisualStyleBackColor = true;
             // 
             // bunifuLabel4
             // 
+            this.bunifuLabel4.BackColor = System.Drawing.Color.Transparent;
             this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel4.Location = new System.Drawing.Point(102, 232);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(11, 20);
+            this.bunifuLabel4.Size = new System.Drawing.Size(14, 22);
             this.bunifuLabel4.TabIndex = 13;
             this.bunifuLabel4.Text = "H";
-            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             // 
             // bunifuLabel5
             // 
+            this.bunifuLabel5.BackColor = System.Drawing.Color.Transparent;
             this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel5.Location = new System.Drawing.Point(239, 232);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(25, 20);
+            this.bunifuLabel5.Size = new System.Drawing.Size(28, 22);
             this.bunifuLabel5.TabIndex = 14;
             this.bunifuLabel5.Text = "Min";
-            this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             // 
             // dtPicker
             // 
+            this.dtPicker.BorderColor = System.Drawing.Color.DodgerBlue;
             this.dtPicker.Checked = true;
-            this.dtPicker.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtPicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(97)))), ((int)(((byte)(77)))));
+            this.dtPicker.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.dtPicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtPicker.Location = new System.Drawing.Point(26, 86);
             this.dtPicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -224,13 +211,14 @@
             // 
             // guna2GradientButton1
             // 
+            this.guna2GradientButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(97)))), ((int)(((byte)(77)))));
             this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(136)))), ((int)(((byte)(77)))));
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(97)))), ((int)(((byte)(77)))));
+            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton1.Location = new System.Drawing.Point(34, 369);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
@@ -241,23 +229,27 @@
             // 
             // txtTime
             // 
+            this.txtTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(97)))), ((int)(((byte)(77)))));
             this.txtTime.Location = new System.Drawing.Point(34, 285);
             this.txtTime.Name = "txtTime";
             this.txtTime.Size = new System.Drawing.Size(169, 42);
             this.txtTime.TabIndex = 20;
             this.txtTime.Text = "";
+            this.txtTime.TextChanged += new System.EventHandler(this.txtTime_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(524, 93);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(503, 135);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 16);
+            this.label1.Size = new System.Drawing.Size(137, 23);
             this.label1.TabIndex = 22;
             this.label1.Text = "days in advance";
             // 
             // cmbDays
             // 
+            this.cmbDays.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(97)))), ((int)(((byte)(77)))));
             this.cmbDays.FormattingEnabled = true;
             this.cmbDays.Items.AddRange(new object[] {
             "1",
@@ -267,16 +259,22 @@
             "5",
             "6",
             "7"});
-            this.cmbDays.Location = new System.Drawing.Point(478, 90);
+            this.cmbDays.Location = new System.Drawing.Point(457, 132);
             this.cmbDays.Name = "cmbDays";
             this.cmbDays.Size = new System.Drawing.Size(40, 24);
             this.cmbDays.TabIndex = 23;
+            // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
             // frmReminders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.cmbDays);
             this.Controls.Add(this.label1);
@@ -294,6 +292,7 @@
             this.Controls.Add(this.chkNotifyme);
             this.Controls.Add(this.bunifuLabel2);
             this.Controls.Add(this.bunifuLabel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmReminders";
             this.Text = "frmReminders";
             this.Load += new System.EventHandler(this.frmReminders_Load);
@@ -322,5 +321,6 @@
         private System.Windows.Forms.RichTextBox txtTime;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbDays;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
     }
 }

@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.bunifuPanel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.bunifuFormControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.bunifuPanel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.customMenu1 = new MyInv.customMenu();
             this.bunifuPanel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.Products = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAddProduct = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.customCard1 = new MyInv.CustomCard();
             this.Receipts = new System.Windows.Forms.TabPage();
             this.Invoices = new System.Windows.Forms.TabPage();
             this.Suppliers = new System.Windows.Forms.TabPage();
@@ -46,8 +47,6 @@
             this.Installments = new System.Windows.Forms.TabPage();
             this.Reminders = new System.Windows.Forms.TabPage();
             this.bunifuImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.customMenu1 = new MyInv.customMenu();
-            this.customCard1 = new MyInv.CustomCard();
             this.bunifuPanel1.SuspendLayout();
             this.bunifuPanel2.SuspendLayout();
             this.bunifuPanel3.SuspendLayout();
@@ -78,6 +77,8 @@
             // 
             this.bunifuFormControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuFormControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuFormControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.bunifuFormControlBox1.IconColor = System.Drawing.Color.White;
             this.bunifuFormControlBox1.Location = new System.Drawing.Point(1060, -2);
             this.bunifuFormControlBox1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuFormControlBox1.Name = "bunifuFormControlBox1";
@@ -101,6 +102,20 @@
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.Size = new System.Drawing.Size(1198, 558);
             this.bunifuPanel2.TabIndex = 2;
+            // 
+            // customMenu1
+            // 
+            this.customMenu1.BackColor = System.Drawing.Color.Transparent;
+            this.customMenu1.BorderColor = System.Drawing.Color.Transparent;
+            this.customMenu1.BorderRadius = 5;
+            this.customMenu1.BorderThickness = 1;
+            this.customMenu1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.customMenu1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.customMenu1.Location = new System.Drawing.Point(0, 0);
+            this.customMenu1.Name = "customMenu1";
+            this.customMenu1.Size = new System.Drawing.Size(310, 558);
+            this.customMenu1.TabIndex = 4;
+            this.customMenu1.SelectedIndexChanged += new System.EventHandler(this.customMenu1_SelectedIndexChanged);
             // 
             // bunifuPanel3
             // 
@@ -185,8 +200,9 @@
             // btnAddProduct
             // 
             this.btnAddProduct.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddProduct.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAddProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnAddProduct.Image")));
+            this.btnAddProduct.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnAddProduct.ImageRotate = 0F;
             this.btnAddProduct.ImageSize = new System.Drawing.Size(30, 30);
             this.btnAddProduct.Location = new System.Drawing.Point(3, 3);
             this.btnAddProduct.Name = "btnAddProduct";
@@ -194,14 +210,23 @@
             this.btnAddProduct.TabIndex = 6;
             this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click_1);
             // 
+            // customCard1
+            // 
+            this.customCard1.AutoScroll = true;
+            this.customCard1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.customCard1.Location = new System.Drawing.Point(59, 3);
+            this.customCard1.Name = "customCard1";
+            this.customCard1.Size = new System.Drawing.Size(243, 346);
+            this.customCard1.TabIndex = 7;
+            // 
             // Receipts
             // 
             this.Receipts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.Receipts.ForeColor = System.Drawing.Color.Beige;
-            this.Receipts.Location = new System.Drawing.Point(184, 4);
+            this.Receipts.Location = new System.Drawing.Point(5, 4);
             this.Receipts.Name = "Receipts";
             this.Receipts.Padding = new System.Windows.Forms.Padding(3);
-            this.Receipts.Size = new System.Drawing.Size(700, 550);
+            this.Receipts.Size = new System.Drawing.Size(879, 550);
             this.Receipts.TabIndex = 1;
             this.Receipts.Text = "tabPage2";
             // 
@@ -209,10 +234,10 @@
             // 
             this.Invoices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.Invoices.ForeColor = System.Drawing.Color.Beige;
-            this.Invoices.Location = new System.Drawing.Point(184, 4);
+            this.Invoices.Location = new System.Drawing.Point(5, 4);
             this.Invoices.Name = "Invoices";
             this.Invoices.Padding = new System.Windows.Forms.Padding(3);
-            this.Invoices.Size = new System.Drawing.Size(700, 550);
+            this.Invoices.Size = new System.Drawing.Size(879, 550);
             this.Invoices.TabIndex = 2;
             this.Invoices.Text = "tabPage3";
             // 
@@ -220,9 +245,9 @@
             // 
             this.Suppliers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.Suppliers.ForeColor = System.Drawing.Color.Beige;
-            this.Suppliers.Location = new System.Drawing.Point(184, 4);
+            this.Suppliers.Location = new System.Drawing.Point(5, 4);
             this.Suppliers.Name = "Suppliers";
-            this.Suppliers.Size = new System.Drawing.Size(700, 550);
+            this.Suppliers.Size = new System.Drawing.Size(879, 550);
             this.Suppliers.TabIndex = 3;
             this.Suppliers.Text = "tabPage1";
             // 
@@ -230,9 +255,9 @@
             // 
             this.Sales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.Sales.ForeColor = System.Drawing.Color.Beige;
-            this.Sales.Location = new System.Drawing.Point(184, 4);
+            this.Sales.Location = new System.Drawing.Point(5, 4);
             this.Sales.Name = "Sales";
-            this.Sales.Size = new System.Drawing.Size(700, 550);
+            this.Sales.Size = new System.Drawing.Size(879, 550);
             this.Sales.TabIndex = 4;
             this.Sales.Text = "tabPage1";
             // 
@@ -240,9 +265,9 @@
             // 
             this.Payments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.Payments.ForeColor = System.Drawing.Color.Beige;
-            this.Payments.Location = new System.Drawing.Point(184, 4);
+            this.Payments.Location = new System.Drawing.Point(5, 4);
             this.Payments.Name = "Payments";
-            this.Payments.Size = new System.Drawing.Size(700, 550);
+            this.Payments.Size = new System.Drawing.Size(879, 550);
             this.Payments.TabIndex = 5;
             this.Payments.Text = "tabPage1";
             // 
@@ -250,9 +275,9 @@
             // 
             this.Installments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.Installments.ForeColor = System.Drawing.Color.Beige;
-            this.Installments.Location = new System.Drawing.Point(184, 4);
+            this.Installments.Location = new System.Drawing.Point(5, 4);
             this.Installments.Name = "Installments";
-            this.Installments.Size = new System.Drawing.Size(700, 550);
+            this.Installments.Size = new System.Drawing.Size(879, 550);
             this.Installments.TabIndex = 6;
             this.Installments.Text = "tabPage1";
             // 
@@ -261,48 +286,24 @@
             this.Reminders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.Reminders.Controls.Add(this.bunifuImageButton1);
             this.Reminders.ForeColor = System.Drawing.Color.Beige;
-            this.Reminders.Location = new System.Drawing.Point(184, 4);
+            this.Reminders.Location = new System.Drawing.Point(5, 4);
             this.Reminders.Name = "Reminders";
-            this.Reminders.Size = new System.Drawing.Size(700, 550);
+            this.Reminders.Size = new System.Drawing.Size(879, 550);
             this.Reminders.TabIndex = 7;
             this.Reminders.Text = "tabPage1";
             // 
             // bunifuImageButton1
             // 
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
+            this.bunifuImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.bunifuImageButton1.ImageRotate = 0F;
             this.bunifuImageButton1.ImageSize = new System.Drawing.Size(30, 30);
             this.bunifuImageButton1.Location = new System.Drawing.Point(414, 250);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(50, 50);
             this.bunifuImageButton1.TabIndex = 8;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
-            // customMenu1
-            // 
-            this.customMenu1.BackColor = System.Drawing.Color.Transparent;
-            this.customMenu1.BackColor = System.Drawing.Color.Transparent;
-            this.customMenu1.BorderColor = System.Drawing.Color.Transparent;
-            this.customMenu1.BorderRadius = 5;
-            this.customMenu1.BorderThickness = 1;
-            this.customMenu1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.customMenu1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.customMenu1.Location = new System.Drawing.Point(0, 0);
-            this.customMenu1.Name = "customMenu1";
-            this.customMenu1.Size = new System.Drawing.Size(310, 558);
-            this.customMenu1.TabIndex = 4;
-            this.customMenu1.SelectedIndexChanged += new System.EventHandler(this.customMenu1_SelectedIndexChanged);
-            // 
-            // customCard1
-            // 
-            this.customCard1.BackColor = System.Drawing.Color.Transparent;
-            this.customCard1.BackColor = System.Drawing.Color.Empty;
-            this.customCard1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.customCard1.Location = new System.Drawing.Point(59, 3);
-            this.customCard1.Name = "customCard1";
-            this.customCard1.Size = new System.Drawing.Size(243, 346);
-            this.customCard1.TabIndex = 7;
             // 
             // Main
             // 
