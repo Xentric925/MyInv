@@ -1,5 +1,4 @@
-﻿using Bunifu.UI.WinForms.BunifuButton;
-using MyInv.Properties;
+﻿using MyInv.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -49,6 +48,16 @@ namespace MyInv
         {
             frmReminders frm = new frmReminders();
             frm.Show();
+        }
+
+        private void customCard2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Scroll(object sender, ScrollEventArgs e)
+        {
+            flowLayoutPanel1.Invalidate();
         }
     }
 }

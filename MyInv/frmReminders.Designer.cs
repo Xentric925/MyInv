@@ -29,21 +29,17 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReminders));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.bunifuLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.chkNotifyme = new System.Windows.Forms.CheckBox();
             this.chkEmail = new System.Windows.Forms.CheckBox();
-            this.txtMemo = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.txtMemo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.bunifuLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.numH = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.NumMin = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.chkAdvanceNotification = new System.Windows.Forms.CheckBox();
-            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.bunifuLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dtPicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.txtTime = new System.Windows.Forms.RichTextBox();
@@ -55,10 +51,7 @@
             // 
             // bunifuLabel1
             // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel1.Location = new System.Drawing.Point(34, 60);
             this.bunifuLabel1.Name = "bunifuLabel1";
@@ -67,13 +60,9 @@
             this.bunifuLabel1.TabIndex = 0;
             this.bunifuLabel1.Text = "Choose Date:";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel2
             // 
-            this.bunifuLabel2.AllowParentOverrides = false;
-            this.bunifuLabel2.AutoEllipsis = false;
-            this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel2.Location = new System.Drawing.Point(26, 167);
             this.bunifuLabel2.Name = "bunifuLabel2";
@@ -82,7 +71,6 @@
             this.bunifuLabel2.TabIndex = 1;
             this.bunifuLabel2.Text = "choose Time :";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // chkNotifyme
             // 
@@ -109,27 +97,21 @@
             // 
             this.txtMemo.AcceptsReturn = false;
             this.txtMemo.AcceptsTab = false;
-            this.txtMemo.AnimationSpeed = 200;
             this.txtMemo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtMemo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtMemo.AutoSizeHeight = true;
             this.txtMemo.BackColor = System.Drawing.Color.Transparent;
             this.txtMemo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtMemo.BackgroundImage")));
-            this.txtMemo.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtMemo.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtMemo.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtMemo.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtMemo.BorderColor = System.Drawing.Color.DodgerBlue;
             this.txtMemo.BorderRadius = 1;
             this.txtMemo.BorderThickness = 1;
             this.txtMemo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtMemo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMemo.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtMemo.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txtMemo.DefaultText = "";
             this.txtMemo.FillColor = System.Drawing.Color.White;
             this.txtMemo.HideSelection = true;
             this.txtMemo.IconLeft = null;
             this.txtMemo.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMemo.IconPadding = 10;
             this.txtMemo.IconRight = null;
             this.txtMemo.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMemo.Lines = new string[0];
@@ -139,26 +121,10 @@
             this.txtMemo.Modified = false;
             this.txtMemo.Multiline = false;
             this.txtMemo.Name = "txtMemo";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtMemo.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtMemo.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtMemo.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtMemo.OnIdleState = stateProperties4;
+            txtMemo.BorderColor = System.Drawing.Color.DodgerBlue;
+            txtMemo.FillColor = System.Drawing.Color.Empty;
+            txtMemo.ForeColor = System.Drawing.Color.Empty;
+            txtMemo.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtMemo.Padding = new System.Windows.Forms.Padding(3);
             this.txtMemo.PasswordChar = '\0';
             this.txtMemo.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -170,21 +136,14 @@
             this.txtMemo.SelectionStart = 0;
             this.txtMemo.ShortcutsEnabled = true;
             this.txtMemo.Size = new System.Drawing.Size(387, 175);
-            this.txtMemo.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtMemo.TabIndex = 7;
             this.txtMemo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtMemo.TextMarginBottom = 0;
-            this.txtMemo.TextMarginLeft = 3;
-            this.txtMemo.TextMarginTop = 1;
-            this.txtMemo.TextPlaceholder = "Enter text";
+            this.txtMemo.PlaceholderText = "Enter text";
             this.txtMemo.UseSystemPasswordChar = false;
             this.txtMemo.WordWrap = true;
             // 
             // bunifuLabel3
             // 
-            this.bunifuLabel3.AllowParentOverrides = false;
-            this.bunifuLabel3.AutoEllipsis = false;
-            this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel3.Location = new System.Drawing.Point(430, 148);
             this.bunifuLabel3.Name = "bunifuLabel3";
@@ -193,7 +152,6 @@
             this.bunifuLabel3.TabIndex = 8;
             this.bunifuLabel3.Text = "Enter your memo :";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // numH
             // 
@@ -231,9 +189,6 @@
             // 
             // bunifuLabel4
             // 
-            this.bunifuLabel4.AllowParentOverrides = false;
-            this.bunifuLabel4.AutoEllipsis = false;
-            this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel4.Location = new System.Drawing.Point(102, 232);
             this.bunifuLabel4.Name = "bunifuLabel4";
@@ -242,13 +197,9 @@
             this.bunifuLabel4.TabIndex = 13;
             this.bunifuLabel4.Text = "H";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel5
             // 
-            this.bunifuLabel5.AllowParentOverrides = false;
-            this.bunifuLabel5.AutoEllipsis = false;
-            this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel5.Location = new System.Drawing.Point(239, 232);
             this.bunifuLabel5.Name = "bunifuLabel5";
@@ -257,7 +208,6 @@
             this.bunifuLabel5.TabIndex = 14;
             this.bunifuLabel5.Text = "Min";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // dtPicker
             // 
@@ -286,7 +236,7 @@
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(180, 45);
             this.guna2GradientButton1.TabIndex = 19;
-            this.guna2GradientButton1.Text = "guna2GradientButton1";
+            this.guna2GradientButton1.Text = "Add Reminder";
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // txtTime
@@ -356,17 +306,17 @@
 
         #endregion
 
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel bunifuLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel bunifuLabel2;
         private System.Windows.Forms.CheckBox chkNotifyme;
         private System.Windows.Forms.CheckBox chkEmail;
-        private Bunifu.UI.WinForms.BunifuTextBox txtMemo;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
+        private Guna.UI2.WinForms.Guna2TextBox txtMemo;
+        private Guna.UI2.WinForms.Guna2HtmlLabel bunifuLabel3;
         private Guna.UI2.WinForms.Guna2NumericUpDown numH;
         private Guna.UI2.WinForms.Guna2NumericUpDown NumMin;
         private System.Windows.Forms.CheckBox chkAdvanceNotification;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
+        private Guna.UI2.WinForms.Guna2HtmlLabel bunifuLabel4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel bunifuLabel5;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtPicker;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private System.Windows.Forms.RichTextBox txtTime;

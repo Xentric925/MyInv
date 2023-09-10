@@ -1,6 +1,4 @@
-﻿using Bunifu.UI.WinForms;
-using Bunifu.UI.WinForms.BunifuAnimatorNS;
-using BunifuAnimatorNS;
+﻿using Guna.UI2.WinForms;
 using Guna.UI2.WinForms.Suite;
 using System;
 using System.Collections.Generic;
@@ -14,7 +12,7 @@ using System.Windows.Forms;
 
 namespace MyInv
 {
-    public partial class CustomCard : BunifuUserControl
+    public partial class CustomCard : UserControl
     {
         public string image, title, description, size;public int price;
         bool pressed=false;
@@ -35,7 +33,7 @@ namespace MyInv
                 j++;
                 Task.Delay(2000).Wait();
                 if (j == 0&&!pressed)
-                    bunifuToolTip1.Show(guna2PictureBox1, "Press for more info", "Description");
+                    bunifuToolTip1.Show( "Press for more info",guna2PictureBox1);
             }
         }
         private void CustomCard_Load(object sender, EventArgs e)
@@ -57,7 +55,7 @@ namespace MyInv
             if (childControlsOutsideBounds)
                 guna2VScrollBar1.BindingContainer = flowLayoutPanel1;
             else guna2VScrollBar1.BindingContainer = border;
-            foreach (BunifuTextBox txt in flowLayoutPanel1.Controls.OfType<BunifuTextBox>())
+            foreach (Guna2TextBox txt in flowLayoutPanel1.Controls.OfType<Guna2TextBox>())
             {
                 if (childControlsOutsideBounds)
                     txt.Width = 108;
@@ -71,12 +69,11 @@ namespace MyInv
             {
                 pressed = true;
                 this.Width = 376;
-                BunifuAnimatorNS.BunifuTransition b = new BunifuAnimatorNS.BunifuTransition();
                 guna2Panel1.CustomizableEdges.TopRight=false;
                 guna2Panel1.CustomizableEdges.BottomRight = false;
                 guna2Panel1.BorderThickness = 0;
                 guna2Panel1.BorderColor = Color.Transparent;
-                b.ShowSync(guna2Panel2, false, BunifuAnimatorNS.Animation.HorizSlide);
+                guna2Panel2.Visible = true;
                 border.BorderThickness = 1;
                 border.BorderColor = Color.Black;
 
@@ -85,17 +82,22 @@ namespace MyInv
 
         private void bunifuIconButton1_Click_1(object sender, EventArgs e)
         {
-            BunifuAnimatorNS.BunifuTransition b = new BunifuAnimatorNS.BunifuTransition();
             guna2Panel1.CustomizableEdges.TopRight = true;
             guna2Panel1.CustomizableEdges.BottomRight = true;
             guna2Panel1.CustomBorderThickness = new Padding(1, 1, 1, 1);
-            b.HideSync(guna2Panel2, false, BunifuAnimatorNS.Animation.HorizSlide);
+            guna2Panel2.Visible = false;
             border.BorderThickness = 0;
             guna2Panel1.BorderColor = Color.Black;
             border.BorderColor = Color.Transparent;
             guna2Panel1.BorderThickness = 1;
             this.Width = 243;
             pressed = false;
+        }
+
+        private void flowLayoutPanel1_Scroll(object sender, ScrollEventArgs e)
+        {
+            flowLayoutPanel1.Invalidate();
+            
         }
 
         private void btn_MouseLeave(object sender, EventArgs e)
