@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace MyInv
 {
-    public partial class customMenu : Bunifu.UI.WinForms.BunifuUserControl
+    public partial class customMenu : Guna2Panel
     {
         private int selectedIndex = 0;
         public event EventHandler SelectedIndexChanged;
