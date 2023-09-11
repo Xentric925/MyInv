@@ -59,5 +59,20 @@ namespace MyInv
         {
             flowLayoutPanel1.Invalidate();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Payments_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

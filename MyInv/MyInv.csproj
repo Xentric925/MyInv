@@ -89,6 +89,12 @@
     <Compile Include="FrmCardOpened.Designer.cs">
       <DependentUpon>FrmCardOpened.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayments.Designer.cs">
+      <DependentUpon>frmPayments.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmReminders.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAddProduct.resx">
       <DependentUpon>FrmAddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayments.resx">
+      <DependentUpon>frmPayments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmReminders.resx">
       <DependentUpon>frmReminders.cs</DependentUpon>
