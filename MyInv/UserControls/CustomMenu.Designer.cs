@@ -20,7 +20,7 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
         /// <summary>
         /// Required method for Designer support - do not modify
@@ -49,8 +49,6 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.bunifuPanel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PictureBox10 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.bunifuLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
@@ -61,18 +59,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            this.bunifuPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuPanel1
             // 
             this.bunifuPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
             this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel1.BorderColor = System.Drawing.Color.Empty;
             this.bunifuPanel1.BorderRadius = 5;
-            this.bunifuPanel1.BorderThickness = 0;
             this.bunifuPanel1.Controls.Add(this.guna2PictureBox9);
             this.bunifuPanel1.Controls.Add(this.guna2PictureBox8);
             this.bunifuPanel1.Controls.Add(this.guna2PictureBox7);
@@ -103,7 +96,7 @@
             // 
             this.guna2PictureBox9.Image = global::MyInv.Properties.Resources.PressState;
             this.guna2PictureBox9.ImageRotate = 0F;
-            this.guna2PictureBox9.Location = new System.Drawing.Point(259, 440);
+            this.guna2PictureBox9.Location = new System.Drawing.Point(259, 410);
             this.guna2PictureBox9.Name = "guna2PictureBox9";
             this.guna2PictureBox9.Size = new System.Drawing.Size(53, 100);
             this.guna2PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -116,7 +109,7 @@
             // 
             this.guna2PictureBox8.Image = global::MyInv.Properties.Resources.PressState;
             this.guna2PictureBox8.ImageRotate = 0F;
-            this.guna2PictureBox8.Location = new System.Drawing.Point(259, 390);
+            this.guna2PictureBox8.Location = new System.Drawing.Point(259, 360);
             this.guna2PictureBox8.Name = "guna2PictureBox8";
             this.guna2PictureBox8.Size = new System.Drawing.Size(53, 100);
             this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -129,7 +122,7 @@
             // 
             this.guna2PictureBox7.Image = global::MyInv.Properties.Resources.PressState;
             this.guna2PictureBox7.ImageRotate = 0F;
-            this.guna2PictureBox7.Location = new System.Drawing.Point(259, 340);
+            this.guna2PictureBox7.Location = new System.Drawing.Point(259, 310);
             this.guna2PictureBox7.Name = "guna2PictureBox7";
             this.guna2PictureBox7.Size = new System.Drawing.Size(53, 100);
             this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -142,7 +135,7 @@
             // 
             this.guna2PictureBox6.Image = global::MyInv.Properties.Resources.PressState;
             this.guna2PictureBox6.ImageRotate = 0F;
-            this.guna2PictureBox6.Location = new System.Drawing.Point(259, 290);
+            this.guna2PictureBox6.Location = new System.Drawing.Point(259, 260);
             this.guna2PictureBox6.Name = "guna2PictureBox6";
             this.guna2PictureBox6.Size = new System.Drawing.Size(53, 100);
             this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -155,7 +148,7 @@
             // 
             this.guna2PictureBox5.Image = global::MyInv.Properties.Resources.PressState;
             this.guna2PictureBox5.ImageRotate = 0F;
-            this.guna2PictureBox5.Location = new System.Drawing.Point(259, 240);
+            this.guna2PictureBox5.Location = new System.Drawing.Point(259, 210);
             this.guna2PictureBox5.Name = "guna2PictureBox5";
             this.guna2PictureBox5.Size = new System.Drawing.Size(53, 100);
             this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -168,7 +161,7 @@
             // 
             this.guna2PictureBox4.Image = global::MyInv.Properties.Resources.PressState;
             this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(259, 190);
+            this.guna2PictureBox4.Location = new System.Drawing.Point(259, 160);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
             this.guna2PictureBox4.Size = new System.Drawing.Size(53, 100);
             this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -181,7 +174,7 @@
             // 
             this.guna2PictureBox3.Image = global::MyInv.Properties.Resources.PressState;
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(259, 140);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(259, 110);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.Size = new System.Drawing.Size(53, 100);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -194,7 +187,7 @@
             // 
             this.guna2PictureBox2.Image = global::MyInv.Properties.Resources.PressState;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(259, 90);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(259, 60);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(53, 100);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -207,7 +200,7 @@
             // 
             this.guna2PictureBox1.Image = global::MyInv.Properties.Resources.PressState;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(259, 40);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(259, 10);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(53, 100);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -239,7 +232,7 @@
             this.guna2Button9.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button9.ImageOffset = new System.Drawing.Point(20, 0);
             this.guna2Button9.ImageSize = new System.Drawing.Size(48, 48);
-            this.guna2Button9.Location = new System.Drawing.Point(0, 464);
+            this.guna2Button9.Location = new System.Drawing.Point(0, 434);
             this.guna2Button9.Name = "guna2Button9";
             this.guna2Button9.PressedDepth = 0;
             this.guna2Button9.Size = new System.Drawing.Size(310, 50);
@@ -272,7 +265,7 @@
             this.guna2Button8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button8.ImageOffset = new System.Drawing.Point(20, 0);
             this.guna2Button8.ImageSize = new System.Drawing.Size(48, 48);
-            this.guna2Button8.Location = new System.Drawing.Point(0, 414);
+            this.guna2Button8.Location = new System.Drawing.Point(0, 384);
             this.guna2Button8.Name = "guna2Button8";
             this.guna2Button8.PressedDepth = 0;
             this.guna2Button8.Size = new System.Drawing.Size(310, 50);
@@ -305,7 +298,7 @@
             this.guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button7.ImageOffset = new System.Drawing.Point(20, 0);
             this.guna2Button7.ImageSize = new System.Drawing.Size(48, 48);
-            this.guna2Button7.Location = new System.Drawing.Point(0, 364);
+            this.guna2Button7.Location = new System.Drawing.Point(0, 334);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.PressedDepth = 0;
             this.guna2Button7.Size = new System.Drawing.Size(310, 50);
@@ -338,7 +331,7 @@
             this.guna2Button6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button6.ImageOffset = new System.Drawing.Point(20, 0);
             this.guna2Button6.ImageSize = new System.Drawing.Size(48, 48);
-            this.guna2Button6.Location = new System.Drawing.Point(0, 314);
+            this.guna2Button6.Location = new System.Drawing.Point(0, 284);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.PressedDepth = 0;
             this.guna2Button6.Size = new System.Drawing.Size(310, 50);
@@ -371,7 +364,7 @@
             this.guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button5.ImageOffset = new System.Drawing.Point(20, 0);
             this.guna2Button5.ImageSize = new System.Drawing.Size(48, 48);
-            this.guna2Button5.Location = new System.Drawing.Point(0, 264);
+            this.guna2Button5.Location = new System.Drawing.Point(0, 234);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.PressedDepth = 0;
             this.guna2Button5.Size = new System.Drawing.Size(310, 50);
@@ -404,7 +397,7 @@
             this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button4.ImageOffset = new System.Drawing.Point(20, 0);
             this.guna2Button4.ImageSize = new System.Drawing.Size(48, 48);
-            this.guna2Button4.Location = new System.Drawing.Point(0, 214);
+            this.guna2Button4.Location = new System.Drawing.Point(0, 184);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.PressedDepth = 0;
             this.guna2Button4.Size = new System.Drawing.Size(310, 50);
@@ -437,7 +430,7 @@
             this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button3.ImageOffset = new System.Drawing.Point(20, 0);
             this.guna2Button3.ImageSize = new System.Drawing.Size(48, 48);
-            this.guna2Button3.Location = new System.Drawing.Point(0, 164);
+            this.guna2Button3.Location = new System.Drawing.Point(0, 134);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.PressedDepth = 0;
             this.guna2Button3.Size = new System.Drawing.Size(310, 50);
@@ -470,7 +463,7 @@
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button2.ImageOffset = new System.Drawing.Point(20, 0);
             this.guna2Button2.ImageSize = new System.Drawing.Size(48, 48);
-            this.guna2Button2.Location = new System.Drawing.Point(0, 114);
+            this.guna2Button2.Location = new System.Drawing.Point(0, 84);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.PressedDepth = 0;
             this.guna2Button2.Size = new System.Drawing.Size(310, 50);
@@ -504,7 +497,7 @@
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.ImageOffset = new System.Drawing.Point(20, 0);
             this.guna2Button1.ImageSize = new System.Drawing.Size(48, 48);
-            this.guna2Button1.Location = new System.Drawing.Point(0, 64);
+            this.guna2Button1.Location = new System.Drawing.Point(0, 34);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.PressedDepth = 0;
             this.guna2Button1.Size = new System.Drawing.Size(310, 50);
@@ -516,53 +509,16 @@
             // bunifuPanel2
             // 
             this.bunifuPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
             this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel2.BorderRadius = 0;
-            this.bunifuPanel2.BorderThickness = 0;
-            this.bunifuPanel2.Controls.Add(this.bunifuLabel1);
-            this.bunifuPanel2.Controls.Add(this.guna2PictureBox10);
             this.bunifuPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuPanel2.Location = new System.Drawing.Point(0, 0);
             this.bunifuPanel2.Name = "bunifuPanel2";
-            this.bunifuPanel2.Size = new System.Drawing.Size(310, 64);
+            this.bunifuPanel2.Size = new System.Drawing.Size(310, 34);
             this.bunifuPanel2.TabIndex = 0;
-            // 
-            // guna2PictureBox10
-            // 
-            this.guna2PictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox10.BorderRadius = 5;
-            this.guna2PictureBox10.Image = global::MyInv.Properties.Resources.StocksTry;
-            this.guna2PictureBox10.ImageRotate = 0F;
-            this.guna2PictureBox10.Location = new System.Drawing.Point(7, 4);
-            this.guna2PictureBox10.Name = "guna2PictureBox10";
-            this.guna2PictureBox10.Size = new System.Drawing.Size(54, 55);
-            this.guna2PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox10.TabIndex = 0;
-            this.guna2PictureBox10.TabStop = false;
-            // 
-            // bunifuLabel1
-            // 
-            this.bunifuLabel1.AutoSize = false;
-            this.bunifuLabel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuLabel1.BackgroundImage")));
-            this.bunifuLabel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Lucida Bright", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(139)))), ((int)(((byte)(127)))));
-            this.bunifuLabel1.Location = new System.Drawing.Point(86, 9);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(98, 44);
-            this.bunifuLabel1.TabIndex = 1;
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             // 
             // customMenu
             // 
-            this.BackColor = System.Drawing.Color.Empty;
-            this.BorderColor = System.Drawing.Color.Transparent;
-            this.BorderRadius = 5;
-            this.BorderThickness = 0;
             this.Controls.Add(this.bunifuPanel1);
             this.Name = "customMenu";
             this.Size = new System.Drawing.Size(310, 558);
@@ -576,8 +532,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            this.bunifuPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -603,7 +557,5 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox10;
-        private Guna.UI2.WinForms.Guna2HtmlLabel bunifuLabel1;
     }
 }

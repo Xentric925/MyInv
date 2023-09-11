@@ -32,7 +32,7 @@ namespace MyInv
 
         private void Main_Load(object sender, EventArgs e)
         {
-
+            this.Invalidate();
         }
 
        
@@ -50,14 +50,36 @@ namespace MyInv
             frm.Show();
         }
 
-        private void customCard2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void flowLayoutPanel1_Scroll(object sender, ScrollEventArgs e)
         {
             flowLayoutPanel1.Invalidate();
+        }
+
+        private void guna2Panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            guna2Panel1.Cursor = Cursors.SizeAll;
+        }
+
+        private void guna2Panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            guna2Panel1.Cursor = Cursors.Default;
+        }
+
+        private void Main_MouseLeave(object sender, EventArgs e)
+        {
+            foreach(Control c in this.Controls)
+            {
+                Cursor = Cursors.Default;
+            }
+        }
+
+        private void Main_Resize(object sender, EventArgs e)
+        {
+            this.Invalidate();
+            foreach (Control c in this.Controls)
+            {
+                c.Invalidate();
+            }
         }
     }
 }
