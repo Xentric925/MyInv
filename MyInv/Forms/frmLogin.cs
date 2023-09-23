@@ -4,10 +4,10 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
 
-namespace HiveDrop
+namespace MyInv
 {
     public partial class frmLogin : Form
-    {
+    {/*
         private SHA256Managed hashAlgorithm= new SHA256Managed();
         public frmLogin()
         {
@@ -54,7 +54,7 @@ namespace HiveDrop
 
                 // Retrieve the stored hashed password and salt from the database
                 string storedHashedPasswordString = userRow[3].ToString(); //GetStoredHashedPasswordFromDatabase();
-                string storedSaltString = userRow[6].ToString();/*GetStoredSaltFromDatabase()*/
+                string storedSaltString = userRow[6].ToString();//GetStoredSaltFromDatabase()
 
                 // Combine the stored salt and entered password
                 string saltedEnteredPassword = storedSaltString + enteredPassword;
@@ -110,6 +110,6 @@ namespace HiveDrop
                 MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-        }
+        }*/
     }
 }

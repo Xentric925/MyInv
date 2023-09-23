@@ -1,4 +1,4 @@
-﻿namespace HiveDrop
+﻿namespace MyInv
 { 
     partial class frmSignUp
     {
@@ -19,7 +19,7 @@
             }
             base.Dispose(disposing);
         }
-
+/*
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -381,6 +381,6 @@
     private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
     private System.Windows.Forms.Label lblPasswordMismatch;
     private System.Windows.Forms.Label lblUsernameAlreadyRegistered;
-        private Guna.UI2.WinForms.Guna2Button btnBack;
+        private Guna.UI2.WinForms.Guna2Button btnBack;*/
     }
 }

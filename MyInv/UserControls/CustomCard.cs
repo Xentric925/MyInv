@@ -26,24 +26,21 @@ namespace MyInv
         {
             if (j == 0)
             {
-                if (!pressed)
-                {
-                    this.SuspendLayout();
-                    guna2Panel1.BorderColor = Color.Beige; 
-                    bunifuPanel1.Padding = new Padding(1);
-                    this.ResumeLayout();
-                }
-                else { this.SuspendLayout(); border.BorderColor = Color.Beige; border.BorderThickness = 1; border.FillColor = Color.Beige; this.ResumeLayout(); }
+                this.SuspendLayout();
+                border.BorderColor = Color.FromArgb(155, 191, 180);
+                border.FillColor = Color.FromArgb(155, 191, 180);
+                bunifuPanel1.Padding = new Padding(1);
+                this.ResumeLayout();
                 /*this.Size = new Size(Size.Width + 4, Size.Height + 4);
                 this.Location = new Point(this.Location.X - 2, this.Location.Y - 2);*/
                 j++;
-                }
+            }
         }
         private void CustomCard_Load(object sender, EventArgs e)
         {
             description = desc.Text;
             bool childControlsOutsideBounds = false;
-
+            btnNext.FillColor = Color.FromArgb(40, 40, 40, 40);
             foreach (Control control in flowLayoutPanel1.Controls)
             {
                 if (control.Bottom > flowLayoutPanel1.Height)
@@ -59,8 +56,8 @@ namespace MyInv
             foreach (Guna2TextBox txt in flowLayoutPanel1.Controls.OfType<Guna2TextBox>())
             {
                 if (childControlsOutsideBounds)
-                    txt.Width = 105;
-                else txt.Width = 124;
+                    txt.Width = 79;
+                else txt.Width = 99;
             }
         }
 
@@ -68,20 +65,19 @@ namespace MyInv
         {
             if (!pressed)
             {
+                this.ParentForm.SuspendLayout();
                 bunifuToolTip1.RemoveAll();
                 bunifuToolTip1.SetToolTip(desc, description);
                 this.SuspendLayout();
                 pressed = true;
-                this.Width = 376;
+                this.Width = 313;
                 guna2Panel1.CustomizableEdges.TopRight=false;
                 guna2Panel1.CustomizableEdges.BottomRight = false;
-                guna2Panel1.BorderThickness = 0;
-                guna2Panel1.BorderColor = Color.Transparent;
                 guna2Panel2.Visible = true;
-                border.BorderThickness = 1;
-                border.BorderColor = Color.Beige;
-                border.FillColor = Color.Beige;
+                border.BorderColor = Color.FromArgb(155, 191, 180);
+                border.FillColor = Color.FromArgb(155, 191, 180);
                 this.ResumeLayout();
+                this.ParentForm.ResumeLayout();
 
             }
         }
@@ -90,19 +86,33 @@ namespace MyInv
         {
             bunifuToolTip1.SetToolTip(guna2PictureBox1, "Press for more info");
             this.SuspendLayout();
+            this.ParentForm.SuspendLayout();
             guna2Panel1.CustomizableEdges.TopRight = true;
             guna2Panel1.CustomizableEdges.BottomRight = true;
             guna2Panel1.CustomBorderThickness = new Padding(1, 1, 1, 1);
             guna2Panel2.Visible = false;
-            border.BorderThickness = 0;
-            guna2Panel1.BorderColor = Color.Black;
-            border.BorderColor = Color.Transparent;
-            border.FillColor = Color.Transparent;
-            guna2Panel1.BorderThickness = 1;
-            this.Width = 243;
+            border.BorderColor = Color.FromArgb(105, 137, 140);
+            border.FillColor = Color.FromArgb(105, 137, 140);
+            this.Width = 203;
             pressed = false;
             this.ResumeLayout();
+            this.ParentForm.ResumeLayout();
             this.btn_MouseLeave(sender,e);
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            updatePhoto(1);
+        }
+
+        private void updatePhoto(int i)
+        {
+            
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            updatePhoto(-1);
         }
 
         private void flowLayoutPanel1_Scroll(object sender, ScrollEventArgs e)
@@ -115,17 +125,12 @@ namespace MyInv
         {
             if (!(this.ClientRectangle.Contains(this.PointToClient(Cursor.Position))))
             {
-                if (!pressed) {
-                    this.SuspendLayout();
-                    guna2Panel1.BorderColor = Color.Black;
-                    bunifuPanel1.Padding = new Padding(2);
-                    this.ResumeLayout();
-                }
-                    
-                else { this.SuspendLayout(); border.BorderColor = Color.Black; border.BorderThickness = 1; border.FillColor = Color.Black; this.ResumeLayout(); }
-                    /*this.Size = new Size(Size.Width - 4, Size.Height - 4);
-                    this.Location = new Point(this.Location.X + 2, this.Location.Y + 2);*/
-                    j--;
+                this.SuspendLayout();
+                bunifuPanel1.Padding = new Padding(2);
+                this.ResumeLayout();
+                /*this.Size = new Size(Size.Width - 4, Size.Height - 4);
+                this.Location = new Point(this.Location.X + 2, this.Location.Y + 2);*/
+                j--;
             }
         }
 

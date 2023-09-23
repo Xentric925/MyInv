@@ -10,10 +10,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Security.Cryptography;
 
-namespace HiveDrop
+namespace MyInv
 {
     public partial class frmSignUp : Form
-    {
+    {/*
         public frmSignUp()
         {
             InitializeComponent();
@@ -139,6 +139,6 @@ namespace HiveDrop
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-        }
+        }*/
     }
 }

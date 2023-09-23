@@ -1,4 +1,4 @@
-﻿namespace HiveDrop
+﻿namespace MyInv
 {
     partial class frmLogin
     {
@@ -19,7 +19,7 @@
             }
             base.Dispose(disposing);
         }
-
+/*
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -260,6 +260,6 @@
         private HiveDropDataSet hiveDropDataSet;
         private HiveDropDataSetTableAdapters.UserTableAdapter userTableAdapter;
         private System.Windows.Forms.Label lblEmailNotFound;
-        private System.Windows.Forms.Label lblWrongPassword;
+        private System.Windows.Forms.Label lblWrongPassword;*/
     }
 }

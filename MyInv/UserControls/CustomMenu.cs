@@ -46,5 +46,19 @@ namespace MyInv
             }
             UpdateSelectedIndex(i);
         }
+
+        private void guna2Button1_MouseEnter(object sender, EventArgs e)
+        { 
+            Guna2Button btn = sender as Guna2Button;
+            if(!btn.Checked)
+                btn.ImageSize = new Size(50, 50);
+        }
+
+        private void guna2Button1_MouseLeave(object sender, EventArgs e)
+        {
+            Guna2Button btn = sender as Guna2Button;
+            if(!btn.Checked)
+                btn.ImageSize = new Size(45,45);
+        }
     }
 }
