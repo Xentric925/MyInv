@@ -17,12 +17,14 @@ namespace MyInv
             InitializeComponent();
         }
 
-        private void bunifuTextBox3_TextChanged(object sender, EventArgs e)
-        {
+       
 
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
-        private void bunifuFormCaptionButton1_Click(object sender, EventArgs e)
+        private void pictureBox_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
 
@@ -36,9 +38,19 @@ namespace MyInv
             }
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void guna2TextBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox5_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

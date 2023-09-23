@@ -62,55 +62,46 @@ namespace MyInv
                     MessageBox.Show("Invalid time format entered. Please enter a valid time (e.g., 10:30 AM).", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
-                //here for the 2days in advance notification:
-                if (chkAdvanceNotification.Checked) {
-                    double x =((double)cmbDays.SelectedIndex)+1;
-                       DateTime newDate = selectedDate.AddDays(-x);
-                    string timeInput2 = txtTime.Text.Trim(); // Get the user-entered time from the TextBox
+               //paste here
+
+            }
+            //here for the 2days in advance notification:
+            if (chkAdvanceNotification.Checked)
+            {
+                DateTime selectedDate = dtPicker.Value.Date;
+
+                double x = ((double)cmbDays.SelectedIndex) + 1;
+                DateTime newDate = selectedDate.AddDays(-x);
+                string timeInput2 = txtTime.Text.Trim(); // Get the user-entered time from the TextBox
 
 
-                    if (DateTime.TryParse(timeInput, out DateTime selectedTime2))
+                if (DateTime.TryParse(timeInput2, out DateTime selectedTime2))
+                {
+                    // Combine the selected date and time
+                    DateTime selectedDateTime2 = newDate.Add(selectedTime2.TimeOfDay);
+
+                    TimeSpan delay = selectedDateTime2 - DateTime.Now; // Calculate the delay until the selected date and time
+
+                    if (delay.TotalMilliseconds > 0)
                     {
-                        // Combine the selected date and time
-                        DateTime selectedDateTime2 = newDate.Add(selectedTime.TimeOfDay);
+                        Timer timer = new Timer();
+                        timer.Interval = (int)delay.TotalMilliseconds;
+                        timer.Tick += Timer_Tick;
+                        timer.Start();
 
-                        TimeSpan delay = selectedDateTime2 - DateTime.Now; // Calculate the delay until the selected date and time
-
-                        if (delay.TotalMilliseconds > 0)
-                        {
-                            Timer timer = new Timer();
-                            timer.Interval = (int)delay.TotalMilliseconds;
-                            timer.Tick += Timer_Tick;
-                            timer.Start();
-
-                            MessageBox.Show($"Notification set for {selectedDateTime2}.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
-                        else
-                        {
-                            MessageBox.Show("Invalid date and time. Please select a future date and time.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
+                        MessageBox.Show($"Notification set for {selectedDateTime2}.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Invalid time format entered. Please enter a valid time (e.g., 10:30 AM).", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Invalid date and time. Please select a future date and time.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                else
+                {
+                    MessageBox.Show("Invalid time format entered. Please enter a valid time (e.g., 10:30 AM).", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-
+            //////
             else if (chkEmail.Checked)
             {
                 DateTime selectedDate = dtPicker.Value.Date; // Get the selected date from the DateTimePicker
@@ -154,7 +145,7 @@ namespace MyInv
             timer.Stop();
 
             // Show the notification message
-            if (chkNotifyme.Checked)
+            if (chkNotifyme.Checked|| chkAdvanceNotification.Checked)
                 MessageBox.Show(txtMemo.Text, "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
             if (chkEmail.Checked)
             {
@@ -188,6 +179,11 @@ namespace MyInv
         {
             txtTime.Text = numH.Value.ToString() + ":" + NumMin.Value.ToString();
 
+        }
+
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
     
