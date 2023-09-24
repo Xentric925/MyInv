@@ -78,6 +78,12 @@
     <Compile Include="Forms\frmLogin.designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmReminders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReminders.Designer.cs">
+      <DependentUpon>frmReminders.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmSignUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,17 +102,11 @@
     <Compile Include="Forms\FrmAddProduct.Designer.cs">
       <DependentUpon>FrmAddProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPayments.cs">
+    <Compile Include="Forms\frmPayments.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPayments.Designer.cs">
+    <Compile Include="Forms\frmPayments.Designer.cs">
       <DependentUpon>frmPayments.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmReminders.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmReminders.Designer.cs">
-      <DependentUpon>frmReminders.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmSupliers.cs">
       <SubType>Form</SubType>
@@ -137,6 +137,9 @@
     <EmbeddedResource Include="Forms\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReminders.resx">
+      <DependentUpon>frmReminders.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmSignUp.resx">
       <DependentUpon>frmSignUp.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,11 +149,8 @@
     <EmbeddedResource Include="Forms\FrmAddProduct.resx">
       <DependentUpon>FrmAddProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPayments.resx">
+    <EmbeddedResource Include="Forms\frmPayments.resx">
       <DependentUpon>frmPayments.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmReminders.resx">
-      <DependentUpon>frmReminders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmSupliers.resx">
       <DependentUpon>frmSupliers.cs</DependentUpon>
